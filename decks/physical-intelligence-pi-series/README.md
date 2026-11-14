@@ -4,7 +4,8 @@
 
 一份面向非专业读者的 60 页讲解：从 π0 到 π0.7，逐代拆解架构、数据、训练目标与真实战绩，并给出完整技术路线图。
 
-- **文件**：`Physical-Intelligence与pi系列模型技术演进.pptx`（可编辑）/ `.pdf`（分享）
+- **PPTX（可编辑）**：[Physical-Intelligence与pi系列模型技术演进.pptx](Physical-Intelligence与pi系列模型技术演进.pptx)
+- **PDF（分享）**：[Physical-Intelligence与pi系列模型技术演进.pdf](Physical-Intelligence与pi系列模型技术演进.pdf)
 - **生成日期**：2026-11-14
 - **资料截止**：2026 年 11 月
 
