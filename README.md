@@ -5,6 +5,7 @@
 | 主题 | 页数 | 文件 | 生成日期 |
 |---|---|---|---|
 | [Physical Intelligence 与 π 系列模型技术演进](decks/physical-intelligence-pi-series/) | 60 | PPTX + PDF | 2026-11-14 |
+| [VLA 与 π 系列模型深度解析](decks/vla-pi-deep-dive/) | 78 | PPTX + PDF | 2026-11-14 |
 
 ## 约定
 
