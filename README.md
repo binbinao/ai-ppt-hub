@@ -4,6 +4,7 @@
 
 | 主题 | 页数 | 文件 | 生成日期 |
 |---|---|---|---|
+| [AI × 工程设计：CAE / CAD / CAM 十个方向](decks/ai-engineering-cae-2026/) | 28 | PPTX + PDF | 2026-11-14 |
 | [AI × 传统制造业：六个可立项的创业方向](decks/ai-manufacturing-2026/) | 28 | PPTX + PDF | 2026-11-14 |
 | [2026 文生图模型深度对比](decks/text-to-image-models-2026/) | 17 | PPTX + PDF | 2026-11-14 |
 | [Physical Intelligence 与 π 系列模型技术演进](decks/physical-intelligence-pi-series/) | 60 | PPTX + PDF | 2026-11-14 |
