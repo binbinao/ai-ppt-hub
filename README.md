@@ -7,6 +7,7 @@
 | [Physical Intelligence 与 π 系列模型技术演进](decks/physical-intelligence-pi-series/) | 60 | PPTX + PDF | 2026-11-14 |
 | [VLA 与 π 系列模型深度解析（图文版）](decks/vla-pi-deep-dive/) | 106 | PPTX + PDF | 2026-11-14 |
 | [VLA 与 π 系列模型演讲版](decks/vla-pi-deep-dive/) | 30 | PPTX + PDF | 2026-11-14 |
+| [世界模型：从想象中学习](decks/world-models/) | 81 | PPTX + PDF | 2026-11-14 |
 
 ## 约定
 
