@@ -11,6 +11,7 @@
 | [VLA 与 π 系列模型深度解析（图文版）](decks/vla-pi-deep-dive/) | 106 | PPTX + PDF | 2026-11-14 |
 | [VLA 与 π 系列模型演讲版](decks/vla-pi-deep-dive/) | 30 | PPTX + PDF | 2026-11-14 |
 | [世界模型：从想象中学习](decks/world-models/) | 81 | PPTX + PDF | 2026-11-14 |
+| [一块电池是怎样造出来的：新能源电池生产线科普](decks/battery-production-line/) | 14 | PPTX + PDF + HTML | 2026-11-15 |
 
 ## 约定
 
