@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>一块电池是怎样造出来的 · 新能源电池生产线科普</title>
+<title>一块电池是怎样造出来的 · 新能源电池生产线科普（图文版）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Sans+SC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -1218,33 +1218,34 @@
 <div id="deck">
 
 <!-- ============================================================
-     新能源电池生产线 · 14 页科普 deck
-     风格 B · 瑞士国际主义 · IKB
-     版式登记：S01 S18 S03 S11 S17 S13 S19 S08 S07 S12 S14 S15 S09 S10
+     新能源电池生产线 · 图文增强版 · 22 页
+     风格 B · 瑞士国际主义 · IKB · Swiss locked mode (S01-S22)
+     每页配图：真实照片 (Wikimedia Commons, 开放授权) 或精确绘制示意图
+     图片署名见 research-notes.md / image-credits.md
      ============================================================ -->
 
-<!-- 01 · S01 · Cover -->
-<section class="slide accent" data-layout="S01" data-animate="hero">
-  <div class="canvas-card">
-    <canvas class="ascii-bg" aria-hidden="true"></canvas>
-    <div class="chrome-min">
-      <div class="l">新能源电池生产线 · 科普演讲</div>
-      <div class="r">SS · 26.11.15 · 01 / 14</div>
-    </div>
-    <div style="flex:1;padding:0;display:grid;grid-template-rows:auto 1fr auto;gap:2.4vh">
-      <div data-anim="kicker" class="t-meta" style="color:rgba(255,255,255,.78);letter-spacing:.22em">FROM POWDER TO PACK / 从粉末到电池包</div>
-      <div style="display:flex;align-items:center;min-height:0;max-width:78vw">
-        <h1 data-anim="title" style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(7.4vw,13.4vh);line-height:.98;letter-spacing:-.035em;color:#fff">一块电池<br/>是怎样造出来的</h1>
-        <div data-anim="sub" style="margin-top:2.6vh;display:flex;align-items:center;gap:1vw;flex-wrap:wrap;font-family:var(--mono);font-size:max(11px,.82vw);letter-spacing:.14em;color:rgba(255,255,255,.7)">
-          <span>材料</span><span style="color:rgba(255,255,255,.35)">→</span><span>极片</span><span style="color:rgba(255,255,255,.35)">→</span><span>电芯</span><span style="color:rgba(255,255,255,.35)">→</span><span>模组</span><span style="color:rgba(255,255,255,.35)">→</span><span>电池包</span>
-        </div>
+<!-- 01 · S22 · Cover: 真实产线照片 -->
+<section class="slide light" data-layout="S22" data-animate="image-hero">
+  <div class="canvas-card" style="padding:0;display:flex;flex-direction:column;overflow:hidden">
+    <div data-anim="img" style="position:relative;flex:0 0 60%;overflow:hidden;background:var(--grey-1)">
+      <img src="images/22-hero-factory.jpg" data-image-slot="s22-hero-21x9" alt="电芯制造实验室产线实拍" loading="eager"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%">
+      <div class="chrome-min" style="position:absolute;top:0;left:0;right:0;color:rgba(255,255,255,.92);padding:5.6vh 5vw 0">
+        <div class="l">FROM POWDER TO PACK · 新能源电池生产线科普</div>
+        <div class="r">01 / 22</div>
       </div>
-      <div data-anim="bottom" style="display:grid;grid-template-rows:auto auto;gap:1.6vh;border-top:1px solid rgba(255,255,255,.24);padding-top:2vh">
-        <div data-anim="lead" class="lead" style="max-width:62ch;color:rgba(255,255,255,.88);font-weight:300">一次看懂新能源电池产线：从正极粉末、极片涂布，到叠片、注液、化成与分容。为什么它既像印刷厂，又像半导体厂？</div>
-        <div style="display:flex;justify-content:space-between;align-items:end;gap:2vw">
-          <div class="t-meta" style="color:rgba(255,255,255,.6)">20 MIN · 14 SLIDES · GENERAL AUDIENCE</div>
-          <div class="t-meta" style="color:rgba(255,255,255,.6)">→ 方向键 / 滚轮翻页</div>
-        </div>
+      <div data-anim="title-block" style="position:absolute;left:5vw;top:11vh;background:var(--paper);padding:3.2vh 3.2vw;max-width:44vw">
+        <div style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9vh);line-height:1;letter-spacing:-.035em;color:var(--text-primary)">一块电池<br/>怎样造出来</div>
+      </div>
+    </div>
+    <div data-anim="kpi" class="image-hero-body">
+      <div style="max-width:44ch;font-family:var(--sans),var(--sans-zh);font-size:max(14px,1.14vw);line-height:1.6;font-weight:300;color:var(--text-primary)">
+        从正极粉末到电池包，要走过三段车间、十几道工序。这不只是一条流水线，更是一场关于「微米级一致性」的工程。今天用 20 分钟把它拆开看。
+      </div>
+      <div class="image-hero-stats" style="gap:3vw">
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">01 / 流程</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em">6 步</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">从前段制极片到后段激活</p></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">02 / 精度</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em">μm</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">几何公差以微米计</p></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">03 / 节拍</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em;color:var(--accent)">70/s</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">大型工厂每秒下线电芯数</p></div>
       </div>
     </div>
   </div>
@@ -1253,10 +1254,7 @@
 <!-- 02 · S18 · Why now -->
 <section class="slide dark" data-layout="S18" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">为什么现在 · WHY NOW</div>
-      <div class="r">02 / 14</div>
-    </div>
+    <div class="chrome-min"><div class="l">为什么现在 · WHY NOW</div><div class="r">02 / 22</div></div>
     <div style="flex:1;padding:0;display:grid;grid-template-rows:auto 1fr auto;gap:3vh;min-height:0">
       <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
         <div class="t-cat" style="color:var(--accent-bright)">THREE NUMBERS / 三个背景数字</div>
@@ -1264,31 +1262,19 @@
       </div>
       <div data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2.2vw;align-items:stretch;min-height:0">
         <div style="display:flex;flex-direction:column;gap:2vh;border-top:1px solid rgba(255,255,255,.2);padding-top:2vh">
-          <div style="display:flex;flex-direction:column;gap:1.4vh">
-            <div class="t-cat" style="color:rgba(255,255,255,.55)">01 / 需求</div>
-            <p class="t-body" style="color:rgba(255,255,255,.82)">2025 年全球电动车电池部署量达到 1.2 TWh，同比约 +30%，是 2020 年的 7 倍以上。</p>
-            <div class="t-meta" style="color:rgba(255,255,255,.42)">IEA · Global EV Outlook 2026</div>
-          </div>
+          <div style="display:flex;flex-direction:column;gap:1.4vh"><div class="t-cat" style="color:rgba(255,255,255,.55)">01 / 需求</div><p class="t-body" style="color:rgba(255,255,255,.82)">2025 年全球电动车电池部署量达 1.2 TWh，同比约 +30%，是 2020 年的 7 倍以上。</p><div class="t-meta" style="color:rgba(255,255,255,.42)">IEA · Global EV Outlook 2026</div></div>
           <div class="kpi-thin" style="font-size:min(6.2vw,11vh);color:var(--paper)">1.2<span class="unit">TWh</span></div>
         </div>
         <div style="display:flex;flex-direction:column;gap:2vh;border-top:1px solid rgba(255,255,255,.2);padding-top:2vh">
-          <div style="display:flex;flex-direction:column;gap:1.4vh">
-            <div class="t-cat" style="color:rgba(255,255,255,.55)">02 / 成本</div>
-            <p class="t-body" style="color:rgba(255,255,255,.82)">2025 年全球锂电池包均价降到 108 美元/kWh，同比下降 8%，创历史新低。</p>
-            <div class="t-meta" style="color:rgba(255,255,255,.42)">BloombergNEF · 2025 Battery Price Survey</div>
-          </div>
+          <div style="display:flex;flex-direction:column;gap:1.4vh"><div class="t-cat" style="color:rgba(255,255,255,.55)">02 / 成本</div><p class="t-body" style="color:rgba(255,255,255,.82)">2025 年全球锂电池包均价降到 108 美元/kWh，同比下降 8%，创历史新低。</p><div class="t-meta" style="color:rgba(255,255,255,.42)">BloombergNEF · 2025 Price Survey</div></div>
           <div class="kpi-thin" style="font-size:min(6.2vw,11vh);color:var(--paper)">$108<span class="unit">/kWh</span></div>
         </div>
         <div style="display:flex;flex-direction:column;gap:2vh;border-top:1px solid var(--accent-bright);padding-top:2vh">
-          <div style="display:flex;flex-direction:column;gap:1.4vh">
-            <div class="t-cat" style="color:var(--accent-bright)">03 / 速度</div>
-            <p class="t-body" style="color:rgba(255,255,255,.82)">一座 38 GWh/年的工厂，每天可生产约 600 万颗圆柱电芯，接近每秒 70 颗。</p>
-            <div class="t-meta" style="color:rgba(255,255,255,.42)">Nature Communications · 2025</div>
-          </div>
+          <div style="display:flex;flex-direction:column;gap:1.4vh"><div class="t-cat" style="color:var(--accent-bright)">03 / 速度</div><p class="t-body" style="color:rgba(255,255,255,.82)">一座 38 GWh/年工厂每天约产 600 万颗圆柱电芯，接近每秒 70 颗。</p><div class="t-meta" style="color:rgba(255,255,255,.42)">Nature Communications · 2025</div></div>
           <div class="kpi-thin accent" style="font-size:min(6.2vw,11vh);color:var(--accent-bright)">70<span class="unit">cells/s</span></div>
         </div>
       </div>
-      <div class="t-meta" style="color:rgba(255,255,255,.48);border-top:1px solid rgba(255,255,255,.16);padding-top:2vh">三条曲线同时发生：需求上升、价格下降、制造速度上升。产线的难度，来自三者必须同时成立。</div>
+      <div class="t-meta" style="color:rgba(255,255,255,.48);border-top:1px solid rgba(255,255,255,.16);padding-top:2vh">需求上升、价格下降、速度上升——三者必须同时成立，这就是产线的难度。</div>
     </div>
   </div>
 </section>
@@ -1298,519 +1284,474 @@
   <div class="canvas-card">
     <div class="split-half">
       <div class="half" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between">
-        <div class="chrome-min" style="margin-bottom:0">
-          <div class="l">核心判断 · THESIS</div>
-          <div class="r">03 / 14</div>
-        </div>
+        <div class="chrome-min" style="margin-bottom:0"><div class="l">核心判断 · THESIS</div><div class="r">03 / 22</div></div>
         <div data-anim="line" style="display:flex;flex-direction:column;gap:2.2vh">
           <div class="t-meta" style="color:rgba(255,255,255,.55);letter-spacing:.2em">MANUFACTURING IS THE PRODUCT</div>
           <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(7.4vw,13.2vh);line-height:.98;letter-spacing:-.035em;color:var(--paper)">把粉末，<br/>变成能储存<br/>能量的<span style="font-style:italic;font-weight:300;color:var(--accent-bright)">秩序</span>。</h2>
         </div>
-        <div class="t-meta" style="color:rgba(255,255,255,.42);border-top:1px solid rgba(255,255,255,.18);padding-top:2vh">电池不是“装”出来的，而是在微米尺度上“长”出来的。</div>
+        <div class="t-meta" style="color:rgba(255,255,255,.42);border-top:1px solid rgba(255,255,255,.18);padding-top:2vh">电池不是「装」出来的，是在微米尺度上「长」出来的。</div>
       </div>
-      <div class="half b-grey" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between">
-        <div class="chrome-min" style="margin-bottom:0">
-          <div class="l" style="color:var(--text-helper)">WHY IT MATTERS</div>
-          <div class="r" style="color:var(--text-helper)">一块电芯的成败</div>
+      <div class="half" style="padding:0;position:relative;overflow:hidden;background:var(--paper)">
+        <img src="images/diagram-10-liion-path-portrait.png" data-image-slot="s03-principle-portrait" alt="锂离子电池充放电路径示意图" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;background:var(--paper);padding:2vh 1vw">
+        <div style="position:absolute;left:3.6vw;top:5.6vh;background:var(--paper);padding:1.4vh 1.2vw">
+          <div class="t-cat accent">工作原理 / 锂离子路径</div>
         </div>
-        <div style="display:flex;flex-direction:column;gap:2.4vh;max-width:32vw">
-          <div class="t-cat accent">不是零件，是界面</div>
-          <p class="t-body" style="font-size:max(15px,1.12vw);line-height:1.7;color:var(--text-secondary)">正极、负极、隔膜、电解液之间，每一层界面都同时影响能量密度、内阻、寿命和安全。制造工艺的任务，是让这些界面在每一颗电芯里都足够一致。</p>
-          <div style="display:flex;flex-direction:column;gap:0;margin-top:1vh">
-            <div style="display:grid;grid-template-columns:4.2em 1fr;gap:1vw;padding:1.6vh 0;border-top:1px solid var(--grey-2)"><span class="t-cat">材料</span><span class="t-body-sm">决定性能上限</span></div>
-            <div style="display:grid;grid-template-columns:4.2em 1fr;gap:1vw;padding:1.6vh 0;border-top:1px solid var(--grey-2)"><span class="t-cat">界面</span><span class="t-body-sm">决定寿命与安全</span></div>
-            <div style="display:grid;grid-template-columns:4.2em 1fr;gap:1vw;padding:1.6vh 0;border-top:1px solid var(--grey-2)"><span class="t-cat accent">一致性</span><span class="t-body-sm">决定良率与成本</span></div>
-          </div>
+        <div style="position:absolute;left:3.6vw;bottom:5vh;right:3.6vw;border-top:2px solid var(--accent);padding-top:1.2vh;background:var(--paper)">
+          <div class="t-meta" style="color:var(--text-helper)">本 deck 依据公开原理绘制 · 非设备图纸</div>
         </div>
-        <div class="t-meta" style="color:var(--text-helper);border-top:1px solid var(--grey-2);padding-top:2vh">从“能造出来”，到“每一颗都一样”，才是产线真正的跨越。</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 04 · S11 · Horizontal timeline -->
+<!-- 04 · S11 · 六步主流程 + 真实产线图 -->
 <section class="slide light" data-layout="S11" data-animate="timeline-walk">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">生产流程 · PROCESS FLOW</div>
-      <div class="r">04 / 14</div>
-    </div>
+    <div class="chrome-min"><div class="l">生产流程 · PROCESS FLOW</div><div class="r">04 / 22</div></div>
     <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
       <div class="t-cat accent">SIX STEPS / 六步主流程</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">六步，把材料变成电芯</h2>
-      <p class="lead" style="max-width:58ch">不同电芯形态会在装配段分叉，但前段制极片、后段做激活的逻辑基本相同。</p>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">六步，把材料变成电芯</h2>
     </div>
-    <div style="flex:1;display:flex;align-items:center;padding:1vh 1vw;min-height:0">
-      <div class="timeline-h" style="height:38vh">
-        <div class="tl-row" style="grid-template-columns:repeat(6,1fr)">
-          <div class="th-node up">
-            <span class="dot"></span>
-            <span class="label"><span class="yr">01 / 前段</span><span class="name">制浆</span><span class="desc">活性材料 + 导电剂 + 粘结剂</span></span>
-          </div>
-          <div class="th-node down">
-            <span class="dot"></span>
-            <span class="label"><span class="yr">02 / 前段</span><span class="name">涂布 · 干燥</span><span class="desc">把浆料均匀铺在箔材上</span></span>
-          </div>
-          <div class="th-node up">
-            <span class="dot"></span>
-            <span class="label"><span class="yr">03 / 前段</span><span class="name">辊压 · 分切</span><span class="desc">压实、裁切、检测毛刺</span></span>
-          </div>
-          <div class="th-node down">
-            <span class="dot"></span>
-            <span class="label"><span class="yr">04 / 中段</span><span class="name">叠片 / 卷绕</span><span class="desc">正负极与隔膜对齐成芯</span></span>
-          </div>
-          <div class="th-node up">
-            <span class="dot"></span>
-            <span class="label"><span class="yr">05 / 中段</span><span class="name">封装 · 注液</span><span class="desc">焊接、入壳、注入电解液</span></span>
-          </div>
-          <div class="th-node down accent">
-            <span class="dot"></span>
-            <span class="label"><span class="yr">06 / 后段</span><span class="name">化成 · 分容</span><span class="desc">首次充电、老化、检测分档</span></span>
+    <div style="display:grid;grid-template-columns:1fr 30vw;gap:2.6vw;flex:1;min-height:0;margin-top:1.6vh;align-items:start">
+      <div style="display:flex;flex-direction:column;min-height:0">
+        <div style="flex:1;display:flex;align-items:center;min-height:0">
+          <div class="timeline-h" style="height:32vh">
+            <div class="tl-row" style="grid-template-columns:repeat(6,1fr)">
+              <div class="th-node up"><span class="dot"></span><span class="label"><span class="yr">01 / 前段</span><span class="name">制浆</span><span class="desc">活性材料+导电剂+粘结剂</span></span></div>
+              <div class="th-node down"><span class="dot"></span><span class="label"><span class="yr">02 / 前段</span><span class="name">涂布·干燥</span><span class="desc">把浆料铺在箔材上</span></span></div>
+              <div class="th-node up"><span class="dot"></span><span class="label"><span class="yr">03 / 前段</span><span class="name">辊压·分切</span><span class="desc">压实、裁切、查毛刺</span></span></div>
+              <div class="th-node down"><span class="dot"></span><span class="label"><span class="yr">04 / 中段</span><span class="name">叠片/卷绕</span><span class="desc">正负极与隔膜对齐</span></span></div>
+              <div class="th-node up"><span class="dot"></span><span class="label"><span class="yr">05 / 中段</span><span class="name">封装·注液</span><span class="desc">焊接、入壳、注电解液</span></span></div>
+              <div class="th-node down accent"><span class="dot"></span><span class="label"><span class="yr">06 / 后段</span><span class="name">化成·分容</span><span class="desc">首充、老化、检测分档</span></span></div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--grey-2);padding-top:2.2vh">
-      <div style="padding-right:2vw;border-right:1px solid var(--grey-2)">
-        <div class="t-cat">01 / 前段</div>
-        <div style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(17px,1.32vw);margin-top:.8vh">极片制造</div>
-        <p class="t-body-sm" style="margin-top:.8vh">决定面密度、厚度、压实密度与表面缺陷。</p>
-      </div>
-      <div style="padding:0 2vw;border-right:1px solid var(--grey-2)">
-        <div class="t-cat">02 / 中段</div>
-        <div style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(17px,1.32vw);margin-top:.8vh">电芯装配</div>
-        <p class="t-body-sm" style="margin-top:.8vh">决定对齐、张力、焊接、密封与水分。</p>
-      </div>
-      <div style="padding-left:2vw">
-        <div class="t-cat accent">03 / 后段</div>
-        <div style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(17px,1.32vw);margin-top:.8vh">激活与检测</div>
-        <p class="t-body-sm" style="margin-top:.8vh">决定 SEI 成膜、容量分档与异常筛出。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 · S17 · System diagram -->
-<section class="slide light" data-layout="S17" data-animate="system-diagram">
-  <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">层级结构 · SYSTEM LAYERS</div>
-      <div class="r">05 / 14</div>
-    </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
-      <div class="t-cat accent">MATERIAL → CELL → PACK</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">一层套一层：<br/>产线到底在造什么？</h2>
-    </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:5fr 7fr;gap:4vw;align-items:center;min-height:0;padding:2vh 0">
-      <div style="display:flex;flex-direction:column;gap:0">
-        <div style="display:grid;grid-template-columns:3.6em 1fr;gap:1.2vw;padding:2.2vh 0;border-top:1px solid var(--grey-2);align-items:start">
-          <div class="t-cat accent">01</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.55vw);font-weight:400">材料层</div><p class="t-body-sm" style="margin-top:.7vh">正极、负极、隔膜、电解液、集流体。决定能量密度和安全边界。</p></div>
-        </div>
-        <div style="display:grid;grid-template-columns:3.6em 1fr;gap:1.2vw;padding:2.2vh 0;border-top:1px solid var(--grey-2);align-items:start">
-          <div class="t-cat">02</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.55vw);font-weight:400">电芯层</div><p class="t-body-sm" style="margin-top:.7vh">极片、卷芯/叠芯、壳体、电解液。决定容量、内阻、循环寿命。</p></div>
-        </div>
-        <div style="display:grid;grid-template-columns:3.6em 1fr;gap:1.2vw;padding:2.2vh 0;border-top:1px solid var(--grey-2);border-bottom:1px solid var(--grey-2);align-items:start">
-          <div class="t-cat">03</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.55vw);font-weight:400">系统层</div><p class="t-body-sm" style="margin-top:.7vh">模组、电池包、BMS、热管理。决定成组效率、热安全与整车体验。</p></div>
-        </div>
-      </div>
-      <div style="position:relative;display:flex;align-items:center;justify-content:center;min-height:0;height:100%">
-        <svg viewBox="0 0 600 600" aria-hidden="true" style="width:min(34vw,52vh);height:min(34vw,52vh);overflow:visible">
-          <circle cx="300" cy="300" r="250" fill="none" stroke="var(--grey-2)" stroke-width="1.2"/>
-          <circle cx="300" cy="300" r="168" fill="none" stroke="var(--grey-2)" stroke-width="1.2"/>
-          <circle cx="300" cy="300" r="92" fill="var(--accent)" stroke="none"/>
-          <line x1="300" y1="50" x2="300" y2="550" stroke="var(--grey-2)" stroke-width="1"/>
-          <line x1="50" y1="300" x2="550" y2="300" stroke="var(--grey-2)" stroke-width="1"/>
-          <rect x="296" y="46" width="8" height="8" fill="var(--accent)"/>
-          <rect x="546" y="296" width="8" height="8" fill="var(--accent)"/>
-          <rect x="296" y="546" width="8" height="8" fill="var(--accent)"/>
-          <rect x="46" y="296" width="8" height="8" fill="var(--accent)"/>
-        </svg>
-        <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:var(--accent-on)">
-          <div class="t-meta" style="color:rgba(255,255,255,.7);letter-spacing:.2em">CORE</div>
-          <div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);margin-top:.4vh">电芯</div>
-        </div>
-        <div style="position:absolute;left:50%;top:5%;transform:translateX(-50%);text-align:center"><div class="t-cat">OUTER / 电池包</div><div class="t-body-sm">系统集成</div></div>
-        <div style="position:absolute;left:0;top:38%;text-align:left"><div class="t-cat">MIDDLE / 模组</div><div class="t-body-sm">成组与热管理</div></div>
-        <div style="position:absolute;right:0;bottom:8%;text-align:right"><div class="t-cat">INNER / CELL</div><div class="t-body-sm">极片与界面</div></div>
-      </div>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;border-top:1px solid var(--grey-2);padding-top:2.2vh">
-      <div><div class="t-cat">材料层</div><p class="t-body-sm" style="margin-top:.8vh">材料体系决定电池的“理论天花板”。</p></div>
-      <div><div class="t-cat">电芯层</div><p class="t-body-sm" style="margin-top:.8vh">制造精度决定电池的“实际兑现率”。</p></div>
-      <div><div class="t-cat accent">系统层</div><p class="t-body-sm" style="margin-top:.8vh">集成能力决定电池在车上“好不好用”。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 06 · S13 · Three forces -->
-<section class="slide dark" data-layout="S13" data-animate="three-forces">
-  <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">三段战场 · THREE BATTLEFIELDS</div>
-      <div class="r">06 / 14</div>
-    </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
-      <div class="t-cat" style="color:var(--accent-bright)">FRONT / MIDDLE / BACK</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--paper)">三段不是三个车间，<br/>而是一条质量链</h2>
-    </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:5fr 11fr;gap:1.6vw;margin-top:2.6vh;min-height:0">
-      <div class="card-accent" style="padding:3.2vh 2vw;display:flex;flex-direction:column;justify-content:space-between;min-height:0">
-        <div>
-          <div class="t-cat" style="color:rgba(255,255,255,.68)">THE CHAIN</div>
-          <div style="font-family:var(--sans),var(--sans-zh);font-size:max(20px,1.8vw);line-height:1.15;margin-top:1.2vh;color:var(--accent-on)">前段做“均匀”<br/>中段做“精准”<br/>后段做“激活”</div>
-        </div>
-        <div>
-          <div class="kpi-thin" style="font-size:min(9vw,16vh);color:#fff">3</div>
-          <div class="t-meta" style="color:rgba(255,255,255,.7);margin-top:1vh">STAGES, ONE QUALITY CHAIN</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--grey-2);padding-top:1.8vh;margin-top:1vh">
+          <div style="padding-right:1.6vw;border-right:1px solid var(--grey-2)"><div class="t-cat">01 / 前段</div><div style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(15px,1.2vw);margin-top:.6vh">极片制造</div><p class="t-body-sm" style="margin-top:.6vh">面密度、厚度、压实密度</p></div>
+          <div style="padding:0 1.6vw;border-right:1px solid var(--grey-2)"><div class="t-cat">02 / 中段</div><div style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(15px,1.2vw);margin-top:.6vh">电芯装配</div><p class="t-body-sm" style="margin-top:.6vh">对齐、张力、焊接、水分</p></div>
+          <div style="padding-left:1.6vw"><div class="t-cat accent">03 / 后段</div><div style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(15px,1.2vw);margin-top:.6vh">激活检测</div><p class="t-body-sm" style="margin-top:.6vh">SEI 成膜、容量分档</p></div>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:1vh;min-height:0">
-        <div class="card-fill" style="flex:1;display:grid;grid-template-columns:4.6em 1fr;gap:1.4vw;padding:2.2vh 1.8vw;align-items:start;min-height:0">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3.4vw,6vh);line-height:.9;color:var(--accent)">01</div>
-          <div><div class="t-cat">FRONT / 前段</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);font-weight:400;margin-top:.4vh">极片制造：把材料铺匀、压准</div><p class="t-body-sm" style="margin-top:.8vh">制浆、涂布、干燥、辊压、分切。核心指标是面密度、厚度、压实密度和表面缺陷。一个颗粒或一条划痕，都可能在后段被放大。</p></div>
-        </div>
-        <div class="card-fill" style="flex:1;display:grid;grid-template-columns:4.6em 1fr;gap:1.4vw;padding:2.2vh 1.8vw;align-items:start;min-height:0">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3.4vw,6vh);line-height:.9;color:var(--accent)">02</div>
-          <div><div class="t-cat">MIDDLE / 中段</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);font-weight:400;margin-top:.4vh">电芯装配：把正负极对齐、封好</div><p class="t-body-sm" style="margin-top:.8vh">模切、叠片/卷绕、焊接、入壳、注液。核心是对齐度、张力、毛刺、水分和密封。这里最怕虚焊、错位和内短路。</p></div>
-        </div>
-        <div class="card-fill" style="flex:1;display:grid;grid-template-columns:4.6em 1fr;gap:1.4vw;padding:2.2vh 1.8vw;align-items:start;min-height:0">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3.4vw,6vh);line-height:.9;color:var(--accent)">03</div>
-          <div><div class="t-cat">BACK / 后段</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);font-weight:400;margin-top:.4vh">化成分容：让电池“醒过来”</div><p class="t-body-sm" style="margin-top:.8vh">首次充电形成 SEI 膜，再经过老化、检测和分档。核心是电流、温度、时间与一致性；成膜不良会直接缩短寿命。</p></div>
-        </div>
+        <div class="frame-img r-16x10" style="height:30vh"><img src="images/02-factory-floor.jpg" data-image-slot="s11-floor-16x10" alt="电芯制造实验室产线设备" style="object-fit:cover;object-position:center 40%"></div>
+        <div class="swiss-img-caption" style="margin-top:0"><strong>真实产线</strong><span>Mfg Lab · CC BY 2.0</span></div>
+        <p class="t-body-sm" style="line-height:1.5">不同电芯形态只在中段分叉；前段制极片、后段做激活的逻辑基本相同。</p>
       </div>
     </div>
-    <div class="t-meta" style="color:rgba(255,255,255,.46);border-top:1px solid rgba(255,255,255,.16);padding-top:2vh">真正的良率，不靠最后一道检验，而靠每一段都不制造缺陷。</div>
   </div>
 </section>
 
-<!-- 07 · S19 · Four cards -->
-<section class="slide light" data-layout="S19" data-animate="four-cards">
+<!-- 05 · S17 · 三层结构 + 原理图 -->
+<section class="slide light" data-layout="S17" data-animate="system-diagram">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">关键工序 · CRITICAL STEPS</div>
-      <div class="r">07 / 14</div>
+    <div class="chrome-min"><div class="l">层级结构 · SYSTEM LAYERS</div><div class="r">05 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
+      <div class="t-cat accent">MATERIAL → CELL → PACK</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">一层套一层：产线在造什么？</h2>
     </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:2.2vh">
-      <div style="height:2px;background:var(--accent);width:100%"></div>
-      <div style="display:flex;flex-direction:column;gap:1.2vh">
-        <div class="t-cat accent">FOUR PLACES WHERE QUALITY IS WON OR LOST</div>
-        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">四个最关键的工序</h2>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:5fr 7fr;gap:3vw;align-items:center;min-height:0;padding:1.6vh 0">
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid var(--grey-2);align-items:start">
+          <div class="t-cat accent">01</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.4vw);font-weight:400">材料层</div><p class="t-body-sm" style="margin-top:.6vh">正极、负极、隔膜、电解液、集流体。决定能量密度和安全边界。</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid var(--grey-2);align-items:start">
+          <div class="t-cat">02</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.4vw);font-weight:400">电芯层</div><p class="t-body-sm" style="margin-top:.6vh">极片、卷芯/叠芯、壳体、电解液。决定容量、内阻、循环寿命。</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid var(--grey-2);border-bottom:1px solid var(--grey-2);align-items:start">
+          <div class="t-cat">03</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.4vw);font-weight:400">系统层</div><p class="t-body-sm" style="margin-top:.6vh">模组、电池包、BMS、热管理。决定成组效率与热安全。</p></div>
+        </div>
+        <div class="t-meta" style="color:var(--text-helper);margin-top:1.4vh">材料决定上限 · 制造精度决定兑现率 · 集成决定好不好用</div>
       </div>
-    </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:1.2vw;margin-top:3vh;min-height:0">
-      <div class="card-fill" style="padding:2.4vh 1.5vw;display:flex;flex-direction:column;min-height:0">
-        <div class="t-meta" style="color:var(--accent)">— 01 / COATING</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.55vw);line-height:1.15;margin-top:1.4vh">涂布</h3>
-        <p class="t-body-sm" style="margin-top:1.2vh">把浆料均匀铺在金属箔上，再烘干。像印刷，但精度以微米计。</p>
-        <div style="margin-top:auto;padding-top:1.6vh;border-top:1px solid var(--grey-2)"><div class="t-cat">控制</div><p class="t-body-sm">面密度 · 厚度 · 干燥温度</p><div class="t-cat" style="margin-top:1.2vh">失败</div><p class="t-body-sm">厚薄不均 → 析锂、容量差</p></div>
-      </div>
-      <div class="card-fill" style="padding:2.4vh 1.5vw;display:flex;flex-direction:column;min-height:0">
-        <div class="t-meta" style="color:var(--accent)">— 02 / CALENDERING</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.55vw);line-height:1.15;margin-top:1.4vh">辊压</h3>
-        <p class="t-body-sm" style="margin-top:1.2vh">用一对大辊把极片压到目标压实密度，让颗粒之间接触更充分。</p>
-        <div style="margin-top:auto;padding-top:1.6vh;border-top:1px solid var(--grey-2)"><div class="t-cat">控制</div><p class="t-body-sm">压力 · 辊缝 · 回弹</p><div class="t-cat" style="margin-top:1.2vh">失败</div><p class="t-body-sm">过压 → 颗粒破碎、孔隙堵塞</p></div>
-      </div>
-      <div class="card-fill" style="padding:2.4vh 1.5vw;display:flex;flex-direction:column;min-height:0">
-        <div class="t-meta" style="color:var(--accent)">— 03 / STACKING</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.55vw);line-height:1.15;margin-top:1.4vh">叠片 / 卷绕</h3>
-        <p class="t-body-sm" style="margin-top:1.2vh">把正极、隔膜、负极一层层对齐，或卷成一个芯。对齐就是安全。</p>
-        <div style="margin-top:auto;padding-top:1.6vh;border-top:1px solid var(--grey-2)"><div class="t-cat">控制</div><p class="t-body-sm">对齐度 · 张力 · 毛刺</p><div class="t-cat" style="margin-top:1.2vh">失败</div><p class="t-body-sm">错位 / 褶皱 → 内短路风险</p></div>
-      </div>
-      <div class="card-fill" style="padding:2.4vh 1.5vw;display:flex;flex-direction:column;min-height:0">
-        <div class="t-meta" style="color:var(--accent)">— 04 / FORMATION</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.55vw);line-height:1.15;margin-top:1.4vh">化成</h3>
-        <p class="t-body-sm" style="margin-top:1.2vh">第一次充电，让电解液在电极表面形成 SEI 膜。电池在这里被“激活”。</p>
-        <div style="margin-top:auto;padding-top:1.6vh;border-top:1px solid var(--grey-2)"><div class="t-cat">控制</div><p class="t-body-sm">电流 · 温度 · 时间</p><div class="t-cat" style="margin-top:1.2vh">失败</div><p class="t-body-sm">成膜不良 → 寿命短、安全差</p></div>
+      <div style="display:flex;flex-direction:column;gap:.8vh;min-height:0">
+        <div class="frame-img r-16x9" style="height:34vh"><img src="images/10-doe-graphic.jpg" data-image-slot="s17-pack-16x9" alt="电池包层级示意：电芯→模组→电池包" style="object-fit:cover"></div>
+        <div class="swiss-img-caption" style="margin-top:0"><strong>电芯 → 模组 → 电池包</strong><span>US DOE · Public domain</span></div>
       </div>
     </div>
-    <div class="t-meta" style="color:var(--text-helper);border-top:1px solid var(--grey-2);padding-top:2vh">四个工序，四种“看不见的精度”：厚度、密度、对齐、成膜。</div>
   </div>
 </section>
 
-<!-- 08 · S08 · Duo compare -->
+<!-- 06 · S22 · 前段实拍 + 三段战场 -->
+<section class="slide light" data-layout="S22" data-animate="image-hero">
+  <div class="canvas-card" style="padding:0;display:flex;flex-direction:column;overflow:hidden">
+    <div data-anim="img" style="position:relative;flex:0 0 58%;overflow:hidden;background:var(--grey-1)">
+      <img src="images/22-hero-coating.jpg" data-image-slot="s22-hero-21x9" alt="锂电池极片涂布设备实拍" loading="eager"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%">
+      <div class="chrome-min" style="position:absolute;top:0;left:0;right:0;color:rgba(255,255,255,.92);padding:5.6vh 5vw 0">
+        <div class="l">前段 · 极片制造 / FRONT END</div><div class="r">06 / 22</div>
+      </div>
+      <div data-anim="title-block" style="position:absolute;left:5vw;top:11vh;background:var(--paper);padding:3.2vh 3.2vw;max-width:42vw">
+        <div style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5vw,8.6vh);line-height:1;letter-spacing:-.035em;color:var(--text-primary)">前段<br/>做「均匀」</div>
+      </div>
+    </div>
+    <div data-anim="kpi" class="image-hero-body">
+      <div style="max-width:42ch;font-family:var(--sans),var(--sans-zh);font-size:max(14px,1.1vw);line-height:1.6;font-weight:300;color:var(--text-primary)">
+        图中是真实涂布设备。前段的全部工作，是把浆料变成厚度、面密度、压实密度都一致的极片——后面所有性能，都建立在这张「纸」上。
+      </div>
+      <div class="image-hero-stats" style="gap:3vw">
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">01 / 输入</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em">4 种</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">活性材料 / 导电剂 / 粘结剂 / 溶剂</p></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">02 / 箔材</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em">6–15</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">集流体厚度 μm 量级（正极铝 / 负极铜）</p></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">03 / 关键</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em;color:var(--accent)">±1%</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">面密度波动需压到极小（工程目标量级）</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · S05 · 涂布与干燥机理图 -->
+<section class="slide light" data-layout="S05" data-animate="stack-build">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">关键工序 01 · COATING & DRYING</div><div class="r">07 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">SLOT-DIE COATING · 狭缝挤压涂布</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">涂布：像印刷，但精度以微米计</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 26vw;gap:2.4vw;flex:1;min-height:0;margin-top:1.6vh;align-items:start">
+      <div class="frame-img r-16x9 swiss-lined" style="height:54vh"><img src="images/diagram-01-coating-drying.png" data-image-slot="s05-diagram-16x9" alt="涂布与干燥工艺示意图：浆料经模头涂到箔材，再经多段烘箱" style="object-fit:contain;background:var(--paper)"></div>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div style="padding:1.5vh 0;border-top:1px solid var(--grey-2)"><div class="t-cat">HOW / 怎么控制</div><p class="t-body-sm" style="margin-top:.6vh">浆料粘度、固含量、模头间隙、走带张力、烘箱温度曲线。任何一个漂移，都会写进极片。</p></div>
+        <div style="padding:1.5vh 0;border-top:1px solid var(--grey-2)"><div class="t-cat">WHY / 为什么难</div><p class="t-body-sm" style="margin-top:.6vh">涂太厚 → 锂扩散路径变长；涂太薄 → 容量不足；左右不均 → 局部析锂。</p></div>
+        <div style="padding:1.5vh 0;border-top:1px solid var(--accent);border-bottom:1px solid var(--accent)"><div class="t-cat accent">FAIL / 失败模式</div><p class="t-body-sm" style="margin-top:.6vh">颗粒、划痕、气泡、干燥不彻底 → 后段鼓壳 / 内短路。</p></div>
+        <div class="t-meta" style="color:var(--text-helper);margin-top:1.2vh">示意图为本 deck 依据公开工艺绘制</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · S04 · 辊压 + 真实电极照片 -->
+<section class="slide light" data-layout="S04" data-animate="grid-reveal">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">关键工序 02 · CALENDERING</div><div class="r">08 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">COMPACTION DENSITY · 压实密度</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">辊压：压得越密越好？不。</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:7fr 5fr;gap:2.4vw;flex:1;min-height:0;margin-top:1.6vh;align-items:start">
+      <div class="frame-img r-16x9 swiss-lined" style="height:54vh"><img src="images/diagram-02-calendering.png" data-image-slot="s04-diagram-16x9" alt="辊压前后颗粒堆积对比示意" style="object-fit:contain;background:var(--paper)"></div>
+      <div style="display:flex;flex-direction:column;gap:.8vh;min-height:0">
+        <div class="frame-img r-16x10" style="height:26vh"><img src="images/04-electrode-hand.jpg" data-image-slot="s04-photo-16x10" alt="研究人员手持涂布后的电极片" style="object-fit:cover;object-position:center 45%"></div>
+        <div class="swiss-img-caption" style="margin-top:0"><strong>涂布后的电极</strong><span>Sandia / DOE · PD</span></div>
+        <p class="t-body-sm" style="margin-top:.8vh;line-height:1.55">压实密度 ↑ → 单位体积活性材料 ↑、能量密度 ↑；但压过头，孔隙被封死，电解液渗不进去，倍率性能反而下降。</p>
+        <div class="t-meta" style="color:var(--text-helper);margin-top:auto;padding-top:1vh;border-top:1px solid var(--grey-2)">控制：辊缝 · 压力 · 辊速 · 回弹</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · S08 · 卷绕 vs 叠片 -->
 <section class="slide light" data-layout="S08" data-animate="duo-mirror">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">路线选择 · WINDING VS STACKING</div>
-      <div class="r">08 / 14</div>
-    </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
+    <div class="chrome-min"><div class="l">关键工序 03 · WINDING vs STACKING</div><div class="r">09 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh">
       <div class="t-cat accent">ONE DECISION, TWO LINE PERSONALITIES</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">卷绕，还是叠片？</h2>
-      <p class="lead" style="max-width:60ch">同样是把正负极装进壳体，路线不同，产线的速度、成本、精度和安全边界都不同。</p>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">卷绕，还是叠片？先看结构</h2>
     </div>
-    <div class="duo-compare" style="margin-top:3vh">
-      <div class="col">
-        <div class="col-tag"><span class="num">A</span> WINDING</div>
-        <div class="col-ttl">卷绕</div>
-        <p class="col-desc">像把三明治卷起来。设备成熟、节拍快、成本友好，特别适合圆柱和部分方形电芯。</p>
-        <ul class="col-list">
-          <li>优点：高速、成熟、单线产出大</li>
-          <li>难点：拐角应力、张力控制、对齐公差</li>
-          <li>典型场景：圆柱电池、成本敏感型产品</li>
-        </ul>
-      </div>
-      <span class="vrule"></span>
-      <div class="col accent">
-        <div class="col-tag"><span class="num">B</span> STACKING</div>
-        <div class="col-ttl">叠片</div>
-        <p class="col-desc">像把三明治一张张叠起来。空间利用率高、内阻低，更适合大尺寸和高能量密度电芯。</p>
-        <ul class="col-list">
-          <li>优点：空间利用率高、内阻低、热分布更均匀</li>
-          <li>难点：效率、粉尘、对齐与毛刺控制</li>
-          <li>典型场景：方形铝壳、软包、长薄化电芯</li>
-        </ul>
-      </div>
+    <div class="frame-img r-16x9" style="margin-top:1.4vh;height:50vh"><img src="images/diagram-03-winding-vs-stacking.png" data-image-slot="s08-diagram-16x9" alt="卷绕与叠片剖面结构对比示意" style="object-fit:contain;background:var(--paper)"></div>
+    <div style="display:grid;grid-template-columns:1fr 1px 1fr;gap:0 3vw;flex:1;min-height:0;margin-top:1.8vh;align-items:start">
+      <div><div class="col-tag"><span class="num">A</span> WINDING</div><p class="t-body-sm" style="margin-top:1vh;line-height:1.6">像把三明治卷起来。设备成熟、节拍快、成本友好，特别适合圆柱与部分方形电芯。难点在拐角应力与张力控制。</p></div>
+      <span class="vrule" style="background:var(--grey-2);width:1px;align-self:stretch"></span>
+      <div><div class="col-tag"><span class="num" style="color:var(--accent);border-color:var(--accent)">B</span> <span style="color:var(--accent)">STACKING</span></div><p class="t-body-sm" style="margin-top:1vh;line-height:1.6">像把三明治一张张叠起来。空间利用率高、内阻低、热更均匀；但对效率、粉尘、对齐与毛刺控制要求更高。</p></div>
     </div>
-    <div class="t-meta" style="color:var(--text-helper);border-top:1px solid var(--grey-2);padding-top:2vh">选型不是“谁更先进”，而是“产品定义 × 产线能力”的匹配。</div>
+    <div class="t-meta" style="color:var(--text-helper);border-top:1px solid var(--grey-2);padding-top:1.6vh">选型不是「谁更先进」，而是「产品定义 × 产线能力」的匹配。</div>
   </div>
 </section>
 
-<!-- 09 · S07 · H-bar chart -->
-<section class="slide grey" data-layout="S07" data-animate="bar-grow">
+<!-- 10 · S16 · 三种电芯形态实证 -->
+<section class="slide grey" data-layout="S16" data-animate="field-notes">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">成本结构 · COST BREAKDOWN</div>
-      <div class="r">09 / 14</div>
+    <div class="chrome-min"><div class="l">电芯形态 · CELL FORMATS</div><div class="r">10 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh">
+      <div class="t-cat accent">SAME CHEMISTRY, DIFFERENT SHELL</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5vw,9vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">三种壳，三种产线性格</h2>
     </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
-      <div class="t-cat accent">WHERE THE MONEY GOES</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">钱花在哪？电芯成本拆解</h2>
-      <p class="lead" style="max-width:62ch">以 4680 NMC811 电芯的公开满成本模型为例：材料占八成以上，制造费用只是“第二层”。</p>
-    </div>
-    <div data-anim="up" style="display:flex;align-items:center;gap:2vw;margin-top:2.2vh">
-      <div class="t-cat">FULL COST / 满成本构成</div>
-      <div style="height:1px;flex:1;background:var(--grey-2)"></div>
-      <div class="t-cat">2024 MODEL</div>
-    </div>
-    <div class="h-bar-chart" style="margin-top:2vh;gap:2.4vh 1.6vw">
-      <div class="row-lbl">材料</div>
-      <div class="row-track" style="height:4vh"><div class="row-fill accent" style="width:82.9%"></div></div>
-      <div class="row-val">82.9<span class="unit">%</span></div>
-      <div class="row-lbl">折旧</div>
-      <div class="row-track" style="height:4vh"><div class="row-fill" style="width:7.4%"></div></div>
-      <div class="row-val">7.4<span class="unit">%</span></div>
-      <div class="row-lbl">管理 / 其他</div>
-      <div class="row-track" style="height:4vh"><div class="row-fill" style="width:5.9%"></div></div>
-      <div class="row-val">5.9<span class="unit">%</span></div>
-      <div class="row-lbl">能源</div>
-      <div class="row-track" style="height:4vh"><div class="row-fill" style="width:2.3%"></div></div>
-      <div class="row-val">2.3<span class="unit">%</span></div>
-      <div class="row-lbl">人工</div>
-      <div class="row-track" style="height:4vh"><div class="row-fill" style="width:1.5%"></div></div>
-      <div class="row-val">1.5<span class="unit">%</span></div>
-    </div>
-    <div style="display:grid;grid-template-columns:7fr 5fr;gap:3vw;margin-top:auto;border-top:1px solid var(--grey-2);padding-top:2vh">
-      <p class="t-body" style="max-width:62ch">材料成本是降本的第一杠杆；但材料再好，也要靠工艺把“实验室性能”变成“可复现的良率”。</p>
-      <div class="t-meta" style="color:var(--text-helper);text-align:right">来源：Communications Engineering (2024), 4680 NMC811 满成本模型<br/>不含材料回收；不同化学体系与地区会显著不同</div>
+    <div data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:1.2vh 1.2vw;flex:1;min-height:0;margin-top:1.6vh">
+      <div style="display:flex;flex-direction:column;gap:.5vh;min-height:0"><div class="frame-img r-21x9" style="flex:1;min-height:0"><img src="images/grid-01-cylinders.jpg" data-image-slot="s16-brief-21x9" alt="18650 与 21700 圆柱电芯" style="object-fit:cover"></div><div class="swiss-img-caption" style="margin-top:0;padding-top:.5vh"><strong>圆柱 · 18650 / 21700</strong><span>CC0</span></div></div>
+      <div style="display:flex;flex-direction:column;gap:.5vh;min-height:0"><div class="frame-img r-21x9" style="flex:1;min-height:0"><img src="images/grid-02-cylindric-open.jpg" data-image-slot="s16-brief-21x9" alt="未封口的圆柱电芯卷芯" style="object-fit:cover"></div><div class="swiss-img-caption" style="margin-top:0;padding-top:.5vh"><strong>圆柱 · 电芯拆解</strong><span>CC BY-SA 3.0</span></div></div>
+      <div style="display:flex;flex-direction:column;gap:.5vh;min-height:0"><div class="frame-img r-21x9" style="flex:1;min-height:0"><img src="images/grid-03-prismatic.jpg" data-image-slot="s16-brief-21x9" alt="方形磷酸铁锂电芯外观" style="object-fit:cover;object-position:center 30%"></div><div class="swiss-img-caption" style="margin-top:0;padding-top:.5vh"><strong>方形 · LFP 302 Ah</strong><span>CC BY-SA 4.0</span></div></div>
+      <div style="display:flex;flex-direction:column;gap:.5vh;min-height:0"><div class="frame-img r-21x9" style="flex:1;min-height:0"><img src="images/grid-04-jellyroll.jpg" data-image-slot="s16-brief-21x9" alt="未封口圆柱电芯的卷芯" style="object-fit:cover"></div><div class="swiss-img-caption" style="margin-top:0;padding-top:.5vh"><strong>卷芯 · 封口前</strong><span>CC BY-SA 3.0</span></div></div>
+      <div style="display:flex;flex-direction:column;gap:.5vh;min-height:0"><div class="frame-img r-21x9" style="flex:1;min-height:0"><img src="images/grid-05-formats.jpg" data-image-slot="s16-brief-21x9" alt="圆柱、方形、软包三种电芯形态对比" style="object-fit:cover"></div><div class="swiss-img-caption" style="margin-top:0;padding-top:.5vh"><strong>三种形态对比图</strong><span>CC BY-SA 4.0</span></div></div>
+      <div style="display:flex;flex-direction:column;gap:.5vh;min-height:0"><div class="frame-img r-21x9" style="flex:1;min-height:0"><img src="images/grid-06-pack.jpg" data-image-slot="s16-brief-21x9" alt="电池模组与电池包层级示意" style="object-fit:cover"></div><div class="swiss-img-caption" style="margin-top:0;padding-top:.5vh"><strong>模组 → 电池包</strong><span>US DOE · PD</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- 10 · S12 · Manifesto + ink banner -->
+<!-- 11 · S01 · 三种形态结构示意（整页大图 + 左对齐标题）-->
+<section class="slide light" data-layout="S01" data-animate="statement">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">三种形态 · STRUCTURE</div><div class="r">11 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">ANATOMY / 结构解剖</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">正极 / 隔膜 / 负极 三层不变</h2>
+    </div>
+    <div class="frame-img r-16x9" style="margin-top:1.4vh;height:56vh"><img src="images/diagram-09-cell-formats.png" data-image-slot="s01-diagram-16x9" alt="圆柱、方形、软包三种电芯结构示意" style="object-fit:contain;background:var(--paper)"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;flex:1;min-height:0;margin-top:1.6vh;align-content:start">
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">圆柱</div><p class="t-body-sm" style="margin-top:.6vh">卷绕 + 金属壳；标准化程度最高、最快，但成组时有空隙。</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">方形</div><p class="t-body-sm" style="margin-top:.6vh">叠片或卷绕 + 铝壳；成组效率高、结构强度好。</p></div>
+      <div style="border-top:1px solid var(--accent);padding-top:1.2vh"><div class="t-cat accent">软包</div><p class="t-body-sm" style="margin-top:.6vh">叠片 + 铝塑膜；轻、形状灵活、能量密度高，但对鼓胀敏感。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · S22 · 中段实拍 -->
+<section class="slide light" data-layout="S22" data-animate="image-hero">
+  <div class="canvas-card" style="padding:0;display:flex;flex-direction:column;overflow:hidden">
+    <div data-anim="img" style="position:relative;flex:0 0 58%;overflow:hidden;background:var(--grey-1)">
+      <img src="images/22-hero-formation.jpg" data-image-slot="s22-hero-21x9" alt="电池制造实验室装配与测试设备" loading="eager"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%">
+      <div class="chrome-min" style="position:absolute;top:0;left:0;right:0;color:rgba(255,255,255,.92);padding:5.6vh 5vw 0">
+        <div class="l">中段 · 电芯装配 / MIDDLE END</div><div class="r">12 / 22</div>
+      </div>
+      <div data-anim="title-block" style="position:absolute;left:5vw;top:11vh;background:var(--paper);padding:3.2vh 3.2vw;max-width:42vw">
+        <div style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5vw,8.6vh);line-height:1;letter-spacing:-.035em;color:var(--text-primary)">中段<br/>做「精准」</div>
+      </div>
+    </div>
+    <div data-anim="kpi" class="image-hero-body">
+      <div style="max-width:42ch;font-family:var(--sans),var(--sans-zh);font-size:max(14px,1.1vw);line-height:1.6;font-weight:300;color:var(--text-primary)">
+        装配在干燥间完成：把极片变成一颗密封、注液、可充电的电芯。这里最贵的不是设备，而是「对齐」和「水分」。
+      </div>
+      <div class="image-hero-stats" style="gap:3vw">
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">01 / 步骤</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em">6 道</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">模切→叠片→焊接→入壳→注液→封口</p></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">02 / 环境</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em">−40°C</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">干燥间露点量级，防水产气</p></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh"><div style="height:1px;background:var(--ink)"></div><div class="t-meta">03 / 致命缺陷</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.6vw,7.6vh);line-height:.95;letter-spacing:-.04em;color:var(--accent)">毛刺</div><div style="height:1px;background:var(--border-subtle);margin-top:auto"></div><p class="t-body-sm">刺穿隔膜即内短路</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · S04 · 装配流程图 -->
+<section class="slide light" data-layout="S04" data-animate="grid-reveal">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">中段 · CELL ASSEMBLY LINE</div><div class="r">13 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">SIX STEPS IN A DRY ROOM</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">六步，把极片关进壳里</h2>
+    </div>
+    <div class="frame-img r-16x9" style="margin-top:1.4vh;height:56vh"><img src="images/diagram-04-cell-assembly.png" data-image-slot="s04-diagram-assembly-16x9" alt="电芯装配六步流程与干燥间要求示意" style="object-fit:contain;background:var(--paper)"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;flex:1;min-height:0;margin-top:1.6vh;align-content:start">
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">对齐</div><p class="t-body-sm" style="margin-top:.6vh">极片错位会让边缘析锂；叠片机与卷绕机都在跟「对齐度」较劲。</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">焊接</div><p class="t-body-sm" style="margin-top:.6vh">极耳与顶盖的超声/激光焊，虚焊会抬升内阻、局部发热。</p></div>
+      <div style="border-top:1px solid var(--accent);padding-top:1.2vh"><div class="t-cat accent">水分</div><p class="t-body-sm" style="margin-top:.6vh">水与电解液反应产气、破坏 SEI，所以整段要在干燥间完成。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · S05 · 化成与 SEI 机理 -->
+<section class="slide light" data-layout="S05" data-animate="stack-build">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">关键工序 04 · FORMATION</div><div class="r">14 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">SEI / SOLID ELECTROLYTE INTERPHASE</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">化成：让电池第一次「醒过来」</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 26vw;gap:2.4vw;flex:1;min-height:0;margin-top:1.6vh;align-items:start">
+      <div class="frame-img r-16x9 swiss-lined" style="height:58vh"><img src="images/diagram-05-formation-sei.png" data-image-slot="s05-diagram-sei-16x9" alt="化成过程 SEI 膜生成与首次充电电压曲线示意" style="object-fit:contain;background:var(--paper)"></div>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div style="padding:1.5vh 0;border-top:1px solid var(--grey-2)"><div class="t-cat">WHAT / 发生了什么</div><p class="t-body-sm" style="margin-top:.6vh">首次充电，电解液在负极表面分解，生成纳米级 SEI 膜。它挡住进一步反应，却也永久消耗了一部分锂。</p></div>
+        <div style="padding:1.5vh 0;border-top:1px solid var(--grey-2)"><div class="t-cat">WHY SLOW / 为什么慢</div><p class="t-body-sm" style="margin-top:.6vh">成膜要「长稳」：电流、温度、时间都要受控。太急 → 膜疏松、产气、寿命短。</p></div>
+        <div style="padding:1.5vh 0;border-top:1px solid var(--accent);border-bottom:1px solid var(--accent)"><div class="t-cat accent">THEN / 之后还有</div><p class="t-body-sm" style="margin-top:.6vh">排气 → 老化 → 分容：按容量、内阻、自放电把电芯分档配对。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · S07 · 成本拆解图 -->
+<section class="slide light" data-layout="S07" data-animate="bar-grow">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">成本结构 · COST BREAKDOWN</div><div class="r">15 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">WHERE THE MONEY GOES</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">材料占八成，那制造还重要吗？</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 24vw;gap:2.4vw;flex:1;min-height:0;margin-top:1.6vh;align-items:start">
+      <div class="frame-img r-16x9 swiss-lined" style="height:58vh"><img src="images/diagram-08-cost-breakdown.png" data-image-slot="s07-diagram-cost-16x9" alt="4680 NMC811 电芯满成本构成条形图" style="object-fit:contain;background:var(--paper)"></div>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div style="padding:1.5vh 0;border-top:1px solid var(--grey-2)"><div class="t-cat">82.9% 材料</div><p class="t-body-sm" style="margin-top:.6vh">正极活性材料是最大单项；降本第一杠杆在材料体系与采购。</p></div>
+        <div style="padding:1.5vh 0;border-top:1px solid var(--grey-2)"><div class="t-cat">剩下 17.1%</div><p class="t-body-sm" style="margin-top:.6vh">折旧、管理、能源、人工。看起来小，却决定了「买来的材料有多少变成合格电芯」。</p></div>
+        <div style="padding:1.5vh 0;border-top:1px solid var(--accent);border-bottom:1px solid var(--accent)"><div class="t-cat accent">良率是隐形乘数</div><p class="t-body-sm" style="margin-top:.6vh">报废 10%，等于把 10% 的材料费和前面全部加工费一起扔掉。</p></div>
+        <div class="t-meta" style="color:var(--text-helper);margin-top:1.2vh">Communications Engineering (2024) · 4680 / NMC811 满成本模型</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · S12 · 质量宣言 + 良率曲线 -->
 <section class="slide hero grey" data-layout="S12" data-animate="manifesto">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">质量 · QUALITY</div>
-      <div class="r">10 / 14</div>
-    </div>
-    <div data-anim="line" style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:2.4vh;padding-bottom:3vh">
+    <div class="chrome-min"><div class="l">质量 · YIELD</div><div class="r">16 / 22</div></div>
+    <div data-anim="line" style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:2vh;padding-bottom:1vh">
       <div class="t-cat accent">THE LINE IS THE PRODUCT</div>
-      <div style="display:grid;grid-template-columns:7fr 5fr;gap:4vw;align-items:end">
-        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(7vw,12.6vh);line-height:.98;letter-spacing:-.035em;color:var(--text-primary)">质量不是<br/>检出来的，<br/>是造出来的。</h2>
-        <div style="display:flex;flex-direction:column;gap:2vh;padding-bottom:1vh">
-          <p class="t-body" style="font-size:max(15px,1.12vw);line-height:1.7;color:var(--text-secondary)">新线爬坡时，报废率可能高达约 30%；成熟产线可以降到 5%–10%。这中间的差距，不是靠最后一道检测补出来的，而是靠每一道工序的稳定性。</p>
-          <div style="border-top:1px solid var(--grey-2);padding-top:1.8vh">
-            <div class="kpi-thin-sm accent" style="font-size:min(5.6vw,10vh)">30% <span style="color:var(--text-helper);font-size:.24em">→</span> 5–10%</div>
-            <div class="t-meta" style="color:var(--text-helper);margin-top:1vh">新线爬坡报废率 → 成熟线水平</div>
+      <div style="display:grid;grid-template-columns:6fr 6fr;gap:3vw;align-items:end">
+        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(6.4vw,11.4vh);line-height:.98;letter-spacing:-.035em;color:var(--text-primary)">质量不是<br/>检出来的，<br/>是造出来的。</h2>
+        <div style="display:flex;flex-direction:column;gap:1.6vh">
+          <p class="t-body" style="font-size:max(14px,1.05vw);line-height:1.65;color:var(--text-secondary)">新线爬坡时报废率可能高达约 30%；成熟产线可降到 5%–10%。这中间的差距，不靠最后一道检验，而靠每一道工序的稳定性。</p>
+          <div style="border-top:1px solid var(--grey-2);padding-top:1.4vh">
+            <div class="kpi-thin-sm accent" style="font-size:min(5vw,9vh)">30% <span style="color:var(--text-helper);font-size:.24em">→</span> 5–10%</div>
             <div class="t-meta" style="color:var(--text-helper);margin-top:.6vh">Roland Berger / RWTH PEM · Battery Monitor 2022</div>
           </div>
         </div>
       </div>
+      <div class="frame-img r-21x9" style="margin-top:1vh;height:30vh"><img src="images/diagram-06-yield-21x9.png" data-image-slot="s12-curve-21x9" alt="良率爬坡曲线：报废率从约 30% 降到 5–10%" style="object-fit:contain;background:var(--paper)"></div>
     </div>
-    <div data-anim="up" style="margin:0 -5vw -4.4vh;background:var(--ink);color:var(--paper);padding:3.2vh 5vw 8vh">
-      <div class="t-meta" style="color:rgba(255,255,255,.48);letter-spacing:.22em">THE REAL PRODUCT OF A LINE</div>
-      <div style="display:flex;justify-content:space-between;align-items:end;gap:3vw;margin-top:1.4vh">
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.4vw,7.6vh);line-height:1;letter-spacing:-.03em">良率，才是产线真正的产品。</h3>
+    <div data-anim="up" style="margin:0 -5vw -4.4vh;background:var(--ink);color:var(--paper);padding:2.6vh 5vw 7.5vh">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:3vw">
+        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4vw,7vh);line-height:1;letter-spacing:-.03em">良率，才是产线真正的产品。</h3>
         <p class="t-body" style="max-width:32ch;color:rgba(255,255,255,.72)">每减少 1% 报废，都是材料、设备、工艺和数据共同完成的胜利。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 11 · S14 · Loop diagram -->
+<!-- 17 · S14 · 质量闭环 -->
 <section class="slide dark" data-layout="S14" data-animate="loop-form">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">质量闭环 · CLOSED LOOP</div>
-      <div class="r">11 / 14</div>
-    </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
+    <div class="chrome-min"><div class="l">质量闭环 · CLOSED LOOP</div><div class="r">17 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
       <div class="t-cat" style="color:var(--accent-bright)">DETECT → LEARN → ADJUST → CONFIRM</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--paper)">好产线，会自己纠偏</h2>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--paper)">好产线，会自己纠偏</h2>
     </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;min-height:0;padding:2vh 1vw">
-      <div style="display:flex;flex-direction:column;gap:0">
-        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid rgba(255,255,255,.2)">
-          <div class="t-cat" style="color:var(--accent-bright)">01</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);color:var(--paper)">在线检测</div><p class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.68)">厚度、对齐、毛刺、水分、焊接质量，边生产边测量。</p></div>
-        </div>
-        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid rgba(255,255,255,.2)">
-          <div class="t-cat" style="color:var(--accent-bright)">02</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);color:var(--paper)">数据回流</div><p class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.68)">把缺陷图像、工艺参数、设备状态绑定到同一颗电芯。</p></div>
-        </div>
-        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid rgba(255,255,255,.2)">
-          <div class="t-cat" style="color:var(--accent-bright)">03</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);color:var(--paper)">参数调整</div><p class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.68)">从“事后判废”变成“过程纠偏”，让下一片更好。</p></div>
-        </div>
-        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:2vh 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)">
-          <div class="t-cat" style="color:var(--accent-bright)">04</div>
-          <div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(17px,1.35vw);color:var(--paper)">首件确认</div><p class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.68)">参数变更后先验证再放行，避免“越调越乱”。</p></div>
-        </div>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center;min-height:0;padding:1vh 1vw">
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:1.8vh 0;border-top:1px solid rgba(255,255,255,.2)"><div class="t-cat" style="color:var(--accent-bright)">01</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,1.3vw);color:var(--paper)">在线检测</div><p class="t-body-sm" style="margin-top:.5vh;color:rgba(255,255,255,.68)">厚度、对齐、毛刺、水分、焊接质量，边生产边测量。</p></div></div>
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:1.8vh 0;border-top:1px solid rgba(255,255,255,.2)"><div class="t-cat" style="color:var(--accent-bright)">02</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,1.3vw);color:var(--paper)">数据回流</div><p class="t-body-sm" style="margin-top:.5vh;color:rgba(255,255,255,.68)">把缺陷图像、工艺参数、设备状态绑定到同一颗电芯。</p></div></div>
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:1.8vh 0;border-top:1px solid rgba(255,255,255,.2)"><div class="t-cat" style="color:var(--accent-bright)">03</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,1.3vw);color:var(--paper)">参数调整</div><p class="t-body-sm" style="margin-top:.5vh;color:rgba(255,255,255,.68)">从「事后判废」变成「过程纠偏」，让下一片更好。</p></div></div>
+        <div style="display:grid;grid-template-columns:3.4em 1fr;gap:1.2vw;padding:1.8vh 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)"><div class="t-cat" style="color:var(--accent-bright)">04</div><div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,1.3vw);color:var(--paper)">首件确认</div><p class="t-body-sm" style="margin-top:.5vh;color:rgba(255,255,255,.68)">参数变更后先验证再放行，避免「越调越乱」。</p></div></div>
       </div>
       <div style="position:relative;display:flex;align-items:center;justify-content:center;height:100%;min-height:0">
-        <svg viewBox="0 0 560 560" aria-hidden="true" style="width:min(31vw,47vh);height:min(31vw,47vh);overflow:visible">
-          <defs>
-            <marker id="loopArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-              <path d="M0,0 L8,4 L0,8 z" fill="var(--accent-bright)"/>
-            </marker>
-          </defs>
+        <svg viewBox="0 0 560 560" aria-hidden="true" style="width:min(30vw,46vh);height:min(30vw,46vh);overflow:visible">
+          <defs><marker id="loopArrow2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--accent-bright)"/></marker></defs>
           <circle cx="280" cy="280" r="190" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="1" stroke-dasharray="4 7"/>
           <circle cx="280" cy="280" r="76" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/>
-          <circle cx="280" cy="88" r="12" fill="var(--accent-bright)"/>
-          <circle cx="472" cy="280" r="12" fill="var(--accent-bright)"/>
-          <circle cx="280" cy="472" r="12" fill="var(--accent-bright)"/>
-          <circle cx="88" cy="280" r="12" fill="var(--accent-bright)"/>
-          <path d="M356,106 A190,190 0 0 1 454,204" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow)"/>
-          <path d="M454,356 A190,190 0 0 1 356,454" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow)"/>
-          <path d="M204,454 A190,190 0 0 1 106,356" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow)"/>
-          <path d="M106,204 A190,190 0 0 1 204,106" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow)"/>
+          <circle cx="280" cy="88" r="12" fill="var(--accent-bright)"/><circle cx="472" cy="280" r="12" fill="var(--accent-bright)"/>
+          <circle cx="280" cy="472" r="12" fill="var(--accent-bright)"/><circle cx="88" cy="280" r="12" fill="var(--accent-bright)"/>
+          <path d="M356,106 A190,190 0 0 1 454,204" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow2)"/>
+          <path d="M454,356 A190,190 0 0 1 356,454" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow2)"/>
+          <path d="M204,454 A190,190 0 0 1 106,356" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow2)"/>
+          <path d="M106,204 A190,190 0 0 1 204,106" fill="none" stroke="var(--accent-bright)" stroke-width="1.4" marker-end="url(#loopArrow2)"/>
           <line x1="280" y1="220" x2="280" y2="120" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
           <line x1="340" y1="280" x2="440" y2="280" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
           <line x1="280" y1="340" x2="280" y2="440" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
           <line x1="220" y1="280" x2="120" y2="280" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
         </svg>
-        <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:var(--paper)">
-          <div class="t-meta" style="color:rgba(255,255,255,.45)">CENTER</div>
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.4vh);letter-spacing:-.03em">DATA</div>
-        </div>
+        <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:var(--paper)"><div class="t-meta" style="color:rgba(255,255,255,.45)">CENTER</div><div style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);letter-spacing:-.03em">DATA</div></div>
         <div style="position:absolute;left:50%;top:5%;transform:translateX(-50%);text-align:center"><div class="t-cat" style="color:rgba(255,255,255,.7)">01 检测</div></div>
         <div style="position:absolute;right:3%;top:50%;transform:translateY(-50%);text-align:right"><div class="t-cat" style="color:rgba(255,255,255,.7)">02 回流</div></div>
         <div style="position:absolute;left:50%;bottom:5%;transform:translateX(-50%);text-align:center"><div class="t-cat" style="color:rgba(255,255,255,.7)">03 调整</div></div>
         <div style="position:absolute;left:3%;top:50%;transform:translateY(-50%);text-align:left"><div class="t-cat" style="color:rgba(255,255,255,.7)">04 确认</div></div>
       </div>
     </div>
-    <div class="t-meta" style="color:rgba(255,255,255,.46);border-top:1px solid rgba(255,255,255,.16);padding-top:2vh">自动化的下一站，不是“无人”，而是“可解释、可追溯、可纠偏”。</div>
+    <div class="t-meta" style="color:rgba(255,255,255,.46);border-top:1px solid rgba(255,255,255,.16);padding-top:1.6vh">自动化的下一站，不是「无人」，而是「可解释、可追溯、可纠偏」。</div>
   </div>
 </section>
 
-<!-- 12 · S15 · Matrix + hero stat -->
-<section class="slide light" data-layout="S15" data-animate="matrix-fill">
+<!-- 18 · S19 · 全产线质量链图 -->
+<section class="slide light" data-layout="S19" data-animate="four-cards">
   <div class="canvas-card">
-    <div class="chrome-min">
-      <div class="l">质量关口 · QUALITY GATES</div>
-      <div class="r">12 / 14</div>
+    <div class="chrome-min"><div class="l">质量关口 · QUALITY GATES</div><div class="r">18 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.6vh;margin-top:1vh">
+      <div style="height:2px;background:var(--accent);width:100%"></div>
+      <div style="display:flex;flex-direction:column;gap:.8vh"><div class="t-cat accent">DEFECTS GET EXPENSIVE DOWNSTREAM</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">越往后，缺陷越贵</h2></div>
     </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
-      <div class="t-cat accent">ONE CELL, MANY CHECKS</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">一块电芯，要过多少道关？</h2>
-      <p class="lead" style="max-width:62ch">产线不是一条直线，而是一组连续的质量关口。每一关都在把“可能的缺陷”挡在下一关之前。</p>
-    </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:1vh 1vw;margin-top:2.6vh;min-height:0">
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">01</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">材料入厂</div><div class="t-body-sm" style="margin-top:auto">粒度 · 水分 · 杂质</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">02</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">浆料</div><div class="t-body-sm" style="margin-top:auto">粘度 · 固含量 · 分散</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">03</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">涂布</div><div class="t-body-sm" style="margin-top:auto">面密度 · 厚度</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">04</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">辊压</div><div class="t-body-sm" style="margin-top:auto">压实密度 · 回弹</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">05</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">分切</div><div class="t-body-sm" style="margin-top:auto">毛刺 · 宽度 · 粉尘</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">06</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">叠片</div><div class="t-body-sm" style="margin-top:auto">对齐度 · 张力</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">07</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">焊接</div><div class="t-body-sm" style="margin-top:auto">虚焊 · 飞溅 · 熔深</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">08</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">注液</div><div class="t-body-sm" style="margin-top:auto">注液量 · 水分 · 密封</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">09</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">化成</div><div class="t-body-sm" style="margin-top:auto">电流 · 温度 · 成膜</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">10</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">分容</div><div class="t-body-sm" style="margin-top:auto">容量 · 内阻 · 自放电</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">11</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">老化</div><div class="t-body-sm" style="margin-top:auto">电压降 · 温度 · 时间</div></div>
-      <div class="card-fill" style="padding:1.6vh 1.2vw;display:flex;flex-direction:column"><div class="t-meta" style="color:var(--accent)">12</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.15vw);margin-top:.5vh">终检</div><div class="t-body-sm" style="margin-top:auto">外观 · 尺寸 · 电性能</div></div>
-    </div>
-    <div data-anim="up" style="margin-top:2.2vh;border-top:1px solid var(--grey-2);padding-top:2vh;display:flex;align-items:end;justify-content:space-between;gap:2vw">
-      <div style="display:flex;align-items:flex-end;gap:1.6vw">
-        <div class="t-cat" style="margin-bottom:.6vh">LINE SPEED</div>
-        <div class="kpi-thin" style="font-size:min(8.2vw,13vh);color:var(--accent)">70<span class="unit">cells/s</span></div>
-      </div>
-      <p class="t-body-sm" style="max-width:34ch;text-align:right">38 GWh 级工厂的节拍 benchmark。速度越快，允许的质量窗口越窄。</p>
+    <div class="frame-img r-16x9" style="margin-top:1.4vh;height:56vh"><img src="images/diagram-07-process-quality-chain.png" data-image-slot="s19-diagram-chain-16x9" alt="前中后三段工序与在线检测关口，及报废损失递增示意" style="object-fit:contain;background:var(--paper)"></div>
+    <div data-anim="up" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.2vw;flex:1;min-height:0;margin-top:1.6vh;align-content:start">
+      <div style="border-top:1px solid var(--grey-2);padding-top:1vh"><div class="t-meta" style="color:var(--accent)">— 01</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.2vw);margin-top:.5vh">极片</div><p class="t-body-sm" style="margin-top:.5vh">报废只损失箔材与浆料</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1vh"><div class="t-meta" style="color:var(--accent)">— 02</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.2vw);margin-top:.5vh">卷芯</div><p class="t-body-sm" style="margin-top:.5vh">加上叠片/卷绕的加工价值</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1vh"><div class="t-meta" style="color:var(--accent)">— 03</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.2vw);margin-top:.5vh">注液后</div><p class="t-body-sm" style="margin-top:.5vh">再加壳体、焊接、电解液</p></div>
+      <div style="border-top:1px solid var(--accent);padding-top:1vh"><div class="t-meta" style="color:var(--accent)">— 04</div><div style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1.2vw);margin-top:.5vh;color:var(--accent)">化成后</div><p class="t-body-sm" style="margin-top:.5vh">再加占机时间与能耗，最贵</p></div>
     </div>
   </div>
 </section>
 
-<!-- 13 · S09 · Dot matrix statement -->
+<!-- 19 · S02 · 真实检测设备 + 时间线 -->
+<section class="slide light" data-layout="S02" data-animate="progression">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">产业背景 · SCALE</div><div class="r">19 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">FROM LAB TO GIGAFACTORY</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.8vw,8.6vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">从实验室到超级工厂</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 26vw;gap:2.4vw;flex:1;min-height:0;margin-top:1.6vh;align-items:start">
+      <div class="timeline-v" style="margin-top:0">
+        <div class="tl-node"><div class="tl-axis"><span class="dot"></span></div><span class="yr">1991</span><span class="multi">1<small>×</small></span><p class="desc">锂离子电池商业化，从消费电子起步</p></div>
+        <div class="tl-node"><div class="tl-axis"><span class="dot"></span></div><span class="yr">2010s</span><span class="multi">GWh</span><p class="desc">电动车带动产线从 MWh 迈入 GWh 级</p></div>
+        <div class="tl-node"><div class="tl-axis"><span class="dot"></span></div><span class="yr">2020</span><span class="multi">1×</span><p class="desc">全球电池部署量的基准年</p></div>
+        <div class="tl-node accent"><div class="tl-axis"><span class="dot"></span></div><span class="yr">2025</span><span class="multi">7<small>×</small></span><p class="desc">EV 电池部署 1.2 TWh，约为 2020 年 7 倍</p></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.8vh;min-height:0">
+        <div class="frame-img r-16x10" style="height:26vh"><img src="images/13-lab-worker.jpg" data-image-slot="s02-photo-16x10" alt="电池制造实验室中的检测人员与设备" style="object-fit:cover;object-position:center 45%"></div>
+        <div class="swiss-img-caption" style="margin-top:0"><strong>实验室检测环节</strong><span>Mfg Lab · CC BY 2.0</span></div>
+        <p class="t-body-sm" style="margin-top:.6vh;line-height:1.55">规模放大后，单颗缺陷的代价被乘以数百万倍。这也是为什么「质量」在 GWh 时代变成头号工程问题。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 20 · S09 · 一致性宣言 -->
 <section class="slide dark" data-layout="S09" data-animate="statement">
   <div class="canvas-card">
     <span class="dot-mat" aria-hidden="true" style="position:absolute;right:-2vw;top:-4vh;width:42vw;height:42vw;color:rgba(91,123,255,.55)"></span>
     <span class="ring-mat" aria-hidden="true" style="position:absolute;left:-4vw;bottom:-6vh;width:26vw;height:26vw;color:rgba(255,255,255,.22)"></span>
-    <div class="chrome-min">
-      <div class="l">下一站 · NEXT</div>
-      <div class="r">13 / 14</div>
-    </div>
+    <div class="chrome-min"><div class="l">下一站 · NEXT</div><div class="r">20 / 22</div></div>
     <div data-anim="line" style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:2.4vh;position:relative;z-index:1;max-width:84vw">
       <div class="t-meta" style="color:var(--accent-bright);letter-spacing:.22em">THE NEXT CHALLENGE</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(7.6vw,13.6vh);line-height:.98;letter-spacing:-.04em;color:var(--paper)">让每一颗电芯，<br/>都长得<span style="font-style:italic;font-weight:300;color:var(--accent-bright)">一样</span>。</h2>
-      <p class="lead" style="max-width:46ch;color:rgba(255,255,255,.68)">这不是一句口号，而是材料、工艺、设备、数据四个系统同时收敛的结果。</p>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(7.2vw,12.8vh);line-height:.98;letter-spacing:-.04em;color:var(--paper)">让每一颗电芯，<br/>都长得<span style="font-style:italic;font-weight:300;color:var(--accent-bright)">一样</span>。</h2>
+      <p class="lead" style="max-width:46ch;color:rgba(255,255,255,.68)">材料创新、工艺升级、数字孪生，最终都在服务同一个目标：把「偶尔做好」变成「一直做好」。</p>
     </div>
     <div style="display:flex;gap:3vw;border-top:1px solid rgba(255,255,255,.2);padding-top:2vh;position:relative;z-index:1">
-      <div class="t-cat" style="color:rgba(255,255,255,.55)">材料创新</div>
-      <div class="t-cat" style="color:rgba(255,255,255,.55)">工艺升级</div>
-      <div class="t-cat" style="color:rgba(255,255,255,.55)">数字孪生</div>
+      <div class="t-cat" style="color:rgba(255,255,255,.55)">材料创新</div><div class="t-cat" style="color:rgba(255,255,255,.55)">工艺升级</div><div class="t-cat" style="color:rgba(255,255,255,.55)">数字孪生</div>
       <div class="t-cat" style="color:var(--accent-bright);margin-left:auto">→ 一致性，是下一轮竞争的主战场</div>
     </div>
   </div>
 </section>
 
-<!-- 14 · S10 · Split closing -->
-<section class="slide split light" data-layout="S10" data-animate="split-statement">
+<!-- 21 · S10 · 收尾 -->
+<section class="slide split" data-layout="S10" data-animate="split-statement">
   <div class="canvas-card">
     <div class="split-half">
       <div class="half b-accent" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between;position:relative;overflow:hidden">
         <canvas class="ascii-bg" aria-hidden="true"></canvas>
-        <div class="chrome-min" style="margin-bottom:0;position:relative;z-index:1">
-          <div class="l">14 / 14 · CLOSING</div>
-          <div class="r">THREE THINGS TO REMEMBER</div>
-        </div>
+        <div class="chrome-min" style="margin-bottom:0;position:relative;z-index:1"><div class="l">21 / 22 · CLOSING</div><div class="r">THREE THINGS TO REMEMBER</div></div>
         <div data-anim="manifesto" style="display:flex;flex-direction:column;gap:1.6vh;position:relative;z-index:1">
           <div class="t-meta" style="color:rgba(255,255,255,.72);letter-spacing:.22em">记住三件事</div>
-          <h2 class="kpi-thin" style="font-size:min(7.8vw,13.6vh);color:#fff;line-height:.92">材料<br/>工艺<br/>数据</h2>
+          <h2 class="kpi-thin" style="font-size:min(7.4vw,13vh);color:#fff;line-height:.92">材料<br/>工艺<br/>数据</h2>
         </div>
         <div data-anim="signature" style="display:flex;justify-content:space-between;align-items:end;border-top:1px solid rgba(255,255,255,.22);padding-top:2vh;position:relative;z-index:1">
-          <div class="t-meta" style="color:rgba(255,255,255,.58)">新能源电池生产线 · 科普版</div>
-          <div class="t-meta" style="color:rgba(255,255,255,.58)">2026.11</div>
+          <div class="t-meta" style="color:rgba(255,255,255,.58)">新能源电池生产线 · 图文科普版</div><div class="t-meta" style="color:rgba(255,255,255,.58)">2026.11</div>
         </div>
       </div>
       <div class="half" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between">
-        <div class="chrome-min">
-          <div class="l">TAKEAWAYS · 结论</div>
-          <div class="r">03 RULES</div>
-        </div>
+        <div class="chrome-min"><div class="l">TAKEAWAYS · 结论</div><div class="r">03 RULES</div></div>
         <ul class="takeaway-list" style="list-style:none;display:flex;flex-direction:column;gap:0;margin:0;padding:0">
-          <li style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:start;padding:2.2vh 0;border-top:1px solid var(--border-subtle)">
-            <div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.8vh);line-height:.9;color:var(--text-primary)">01</div>
-            <div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.65vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:1vh">材料决定上限</h3><p class="t-body-sm">正极、负极、隔膜、电解液，决定能量密度与安全边界。</p></div>
-          </li>
-          <li style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:start;padding:2.2vh 0;border-top:1px solid var(--border-subtle)">
-            <div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.8vh);line-height:.9;color:var(--text-primary)">02</div>
-            <div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.65vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:1vh">工艺决定一致性</h3><p class="t-body-sm">涂布、辊压、叠片、化成，把材料变成可复现的产品。</p></div>
-          </li>
-          <li style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:start;padding:2.2vh 0;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)">
-            <div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.8vh);line-height:.9;color:var(--accent)">03</div>
-            <div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.65vw);line-height:1.2;letter-spacing:-.015em;color:var(--accent);margin-bottom:1vh">数据决定良率</h3><p class="t-body-sm">在线检测 + 参数闭环，让缺陷在变成废品之前被拦住。</p></div>
-          </li>
+          <li style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:start;padding:2.2vh 0;border-top:1px solid var(--border-subtle)"><div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.8vh);line-height:.9;color:var(--text-primary)">01</div><div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.65vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:1vh">材料决定上限</h3><p class="t-body-sm">正极、负极、隔膜、电解液，决定能量密度与安全边界。</p></div></li>
+          <li style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:start;padding:2.2vh 0;border-top:1px solid var(--border-subtle)"><div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.8vh);line-height:.9;color:var(--text-primary)">02</div><div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.65vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:1vh">工艺决定一致性</h3><p class="t-body-sm">涂布、辊压、叠片、化成，把材料变成可复现的产品。</p></div></li>
+          <li style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:start;padding:2.2vh 0;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)"><div style="font-family:var(--sans);font-weight:200;font-size:min(4.4vw,7.8vh);line-height:.9;color:var(--accent)">03</div><div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.65vw);line-height:1.2;letter-spacing:-.015em;color:var(--accent);margin-bottom:1vh">数据决定良率</h3><p class="t-body-sm">在线检测 + 参数闭环，让缺陷在变成废品之前被拦住。</p></div></li>
         </ul>
         <div style="border-top:1px solid var(--border-subtle);padding-top:1.6vh">
-          <div class="t-meta" style="color:var(--text-helper);line-height:1.7">主要来源：IEA Global EV Outlook 2026；BloombergNEF Battery Price Survey 2025；Nature Communications 2025 (Attia et al.)；Communications Engineering 2024 (cost model)；Roland Berger / RWTH PEM Battery Monitor 2022；安永《锂电10大技术趋势》。<br/>科普用途，不构成投资建议。</div>
+          <div class="t-meta" style="color:var(--text-helper);line-height:1.7">主要来源：IEA GEO 2026；BloombergNEF 2025；Nature Communications 2025；Communications Engineering 2024；Roland Berger / RWTH PEM 2022；安永《锂电10大技术趋势》。图片：Wikimedia Commons 开放授权作品，署名见 image-credits.md。科普用途，不构成投资建议。</div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- 22 · S01 · 图片来源与口径 -->
+<section class="slide light" data-layout="S01" data-animate="statement">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">附录 · SOURCES & CREDITS</div><div class="r">22 / 22</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-top:1vh">
+      <div class="t-cat accent">IMAGE CREDITS / 图片来源</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.6vw,8.2vh);line-height:1.02;letter-spacing:-.03em;color:var(--text-primary)">图从哪里来，数怎么读</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.6vw;flex:1;min-height:0;margin-top:1.8vh;align-content:start">
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">真实照片</div><p class="t-body-sm" style="margin-top:.7vh">全部来自 Wikimedia Commons 开放授权作品：Battery Manufacturing Lab (CC BY 2.0)、RudolfSimon 涂布机 (CC BY 3.0)、US DOE / Sandia (Public domain)、电芯形态图 (CC0 / CC BY-SA)。逐张署名见 image-credits.md。</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">工艺示意图</div><p class="t-body-sm" style="margin-top:.7vh">本 deck 依据公开工艺资料用代码绘制，用于解释机理，不作为设备图纸或工艺参数规范。</p></div>
+      <div style="border-top:1px solid var(--accent);padding-top:1.2vh"><div class="t-cat accent">数字口径</div><p class="t-body-sm" style="margin-top:.7vh">70 cells/s 为 38 GWh 工厂换算量级；30%→5–10% 为行业观察区间；成本结构为特定模型假设下的满成本。详见 research-notes.md。</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">01 / 需求</div><p class="t-body-sm" style="margin-top:.7vh">IEA, Global EV Outlook 2026 — Electric vehicle batteries</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">02 / 价格</div><p class="t-body-sm" style="margin-top:.7vh">BloombergNEF, 2025 Lithium-Ion Battery Price Survey</p></div>
+      <div style="border-top:1px solid var(--grey-2);padding-top:1.2vh"><div class="t-cat">03 / 质量</div><p class="t-body-sm" style="margin-top:.7vh">Attia et al., Nature Communications 16:611 (2025)；Roland Berger / RWTH PEM, Battery Monitor 2022</p></div>
+    </div>
+    <div class="t-meta" style="color:var(--text-helper);border-top:1px solid var(--grey-2);padding-top:1.6vh">本 deck 为科普材料，不构成投资建议；引用前请核对原始论文 / 官方博客。</div>
+  </div>
+</section>
+
 
 </div>
 

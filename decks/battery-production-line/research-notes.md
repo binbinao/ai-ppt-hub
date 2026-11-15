@@ -66,3 +66,16 @@
 - 本 deck 面向科普受众，重点解释“为什么难”和“关键控制点”，不展开具体设备型号、工艺窗口和商业报价。
 - 所有数字均在页面或 README 标注来源；无法确认的内容不写成确定事实。
 - 不构成投资建议。
+
+---
+
+## 补充：图片来源（图文增强版新增）
+
+本 deck 的配图分两类，逐张署名与授权链接见 [image-credits.md](image-credits.md)：
+
+1. **真实照片**：全部来自 Wikimedia Commons 开放授权作品。主要包括 Oak Ridge National Laboratory 的 Battery Manufacturing Lab 产线照片（CC BY 2.0）、RudolfSimon 的电极涂布机（CC BY 3.0）与圆柱电芯拆解（CC BY-SA 3.0）、US DOE / Sandia / NTSB 的电极与电池包层级图（Public domain）、以及圆柱/方形电芯照片（CC0 / CC BY-SA 4.0）。
+2. **工艺示意图**：由本 deck 用代码依据公开工艺资料绘制（涂布与干燥、辊压、卷绕 vs 叠片、装配六步、化成 SEI、良率爬坡、质量链、成本拆解、三种电芯形态、锂离子路径）。用于解释机理，不是设备图纸。
+
+**勘误**：初版曾把 `Lithium ion battery.png`（电化学能级图）误当作充放电路径图、把 `PrismaticCell.png`（带英文标注的材料说明图）误当作方形电芯剖面图。图文增强版已把两者从正式页面移除，改用自行绘制的准确示意图与真实电芯照片。
+
+**关于 AI 生图**：本机 `openai-image-gen` 技能存在，但 `OPENAI_API_KEY` 未配置、media-desk image 配置为空、OpenAI 端点不可达，因此**没有使用付费 AI 生图**。对技术科普而言，开放授权的真实照片 + 精确绘制的机理图，比「看起来像但可能画错」的生成图更可靠、可核查。
