@@ -65,7 +65,7 @@ def takeaway(s, text, accent=TEAL, y=6.40):
 
 
 def card(s, x, y, w, h, title=None, body=None, accent=TEAL, title_size=14.5,
-         body_size=12.5, fill=CARD, title_color=TEXT, body_color=TEXT):
+         body_size=13, fill=CARD, title_color=TEXT, body_color=TEXT):
     add_rect(s, x, y, w, h, fill=fill, line=LINE, radius=0.06)
     add_rect(s, x, y, 0.07, h, fill=accent, line=None, shape_type=MSO_SHAPE.RECTANGLE)
     ty = y + 0.16
@@ -291,7 +291,7 @@ def p_questions(s):
                  color=WHITE, align=PP_ALIGN.CENTER)
         add_text(s, M + 0.72, y + 0.14, 6.5, 0.62, q, size=14.5, bold=True,
                  color=TEXT, line_spacing=1.12)
-        add_text(s, M + 0.72, y + 0.84, 6.5, 0.3, a, size=12.5, color=MUTED)
+        add_text(s, M + 0.72, y + 0.84, 6.5, 0.3, a, size=13, color=MUTED)
     add_rect(s, 8.30, 1.84, 4.41, 4.20, fill=WHITE, line=LINE, radius=0.06)
     add_text(s, 8.55, 2.00, 4.0, 0.3, "本讲路线", size=11, bold=True, color=MUTED)
     route = [("01", "下山与随机化", TEAL), ("02", "加速：方向", BLUE),
@@ -327,7 +327,7 @@ def p_paradigms(s):
                      align=PP_ALIGN.CENTER)
             add_text(s, cx - 1.45, 2.20, 2.9, 0.44, name, size=23, bold=True, color=TEXT,
                      align=PP_ALIGN.CENTER)
-            add_text(s, cx - 1.45, 2.72, 2.9, 0.7, idea, size=12.5, color=MUTED,
+            add_text(s, cx - 1.45, 2.72, 2.9, 0.7, idea, size=13, color=MUTED,
                      align=PP_ALIGN.CENTER, line_spacing=1.2)
             add_line(s, cx, 3.42, cx, 3.30, color=col, width=1.2)
         else:
@@ -335,7 +335,7 @@ def p_paradigms(s):
                      align=PP_ALIGN.CENTER)
             add_text(s, cx - 1.45, 4.12, 2.9, 0.44, name, size=23, bold=True, color=TEXT,
                      align=PP_ALIGN.CENTER)
-            add_text(s, cx - 1.45, 4.64, 2.9, 0.7, idea, size=12.5, color=MUTED,
+            add_text(s, cx - 1.45, 4.64, 2.9, 0.7, idea, size=13, color=MUTED,
                      align=PP_ALIGN.CENTER, line_spacing=1.2)
             add_line(s, cx, 3.82, cx, 3.72, color=col, width=1.2)
         add_text(s, cx - 1.55, 5.52, 3.1, 0.3, rep, size=10.5, color=SLATE,
@@ -372,7 +372,7 @@ def p_why(s):
              "10% 的训练效率差，就是数百万美元量级的差别；\n"
              "若因此多跑一次失败的大规模实验，代价还要翻倍。\n\n"
              "所以工业界选优化器，远比论文里的「快几个点」谨慎。",
-             size=12, color=MUTED, line_spacing=1.32)
+             size=13, color=MUTED, line_spacing=1.32)
     takeaway(s, "优化器是训练里性价比最高、也最容易被低估的一行代码。", accent=TEAL)
     notes(s, "三个数字代表三种证据：小规模 speedrun、规模化 compute-optimal、社区复现记录。"
              "2× 是特定设定下的结论，不是任何场景都 2×。")
@@ -458,7 +458,7 @@ def p_canyon(s):
         ("SGD 263 步。", "在狭长方向反复过冲，只能靠小 lr 稳住。"),
         ("动量 90 步。", "沿长轴积累速度，抵消横向锯齿。"),
         ("Adam 83 步。", "逐坐标缩放，两个方向各走各的。"),
-    ], size=12.5, gap=0.86)
+    ], size=13, gap=0.86)
     add_text(s, 8.05, 5.05, 4.55, 0.9,
              "条件数 κ=100：横轴曲率是纵轴的 100 倍。\n同一个标量步长不可能同时适配两边。",
              size=11.5, color=MUTED, line_spacing=1.3)
@@ -515,7 +515,7 @@ def p_momentum(s):
         ("抵消锯齿。", "横向分量正负抵消，纵向分量累积。"),
         ("β=0.9 ≈ 记住 10 步。", "等效学习率放大 1/(1−β) 倍。"),
         ("Nesterov 更进一步。", "先在预判点取梯度，再看要不要修正。"),
-    ], size=12.5, gap=0.85, bullet_color=BLUE)
+    ], size=13, gap=0.85, bullet_color=BLUE)
     takeaway(s, "动量把「历史」变成方向信息：这一步不只由当前梯度决定。", accent=BLUE)
     notes(s, "动量解决的是「方向抖」；它并不改变每个坐标的尺度。Nesterov 的区别是先按动量走一步，"
              "在预判点算梯度，相当于带前瞻的修正。")
@@ -536,7 +536,7 @@ def p_adagrad(s):
         ("分母是历史平方和。", "每个坐标独立累积，互不影响。"),
         ("稀疏特征受益。", "很少出现的特征，分母小、步长大。"),
         ("致命缺点。", "G 单调增 → 步长终将衰减到 0。"),
-    ], size=12.5, gap=0.82, bullet_color=PURPLE)
+    ], size=13, gap=0.82, bullet_color=PURPLE)
     takeaway(s, "AdaGrad 提出了正确的问题：步长应该逐坐标；但「记一辈子」不是答案。", accent=PURPLE)
     notes(s, "这张图是示意：两个坐标梯度相差 10 倍，有效步长也相差约 10 倍。"
              "AdaGrad 的问题在非平稳目标上尤其明显——学习率会过早衰减。")
@@ -563,7 +563,7 @@ def p_rmsprop(s):
         ("忘记过去。", "不累积全部历史，只保留最近一段。"),
         ("适合非平稳目标。", "损失面在训练中一直在变。"),
         ("留下一个旋钮。", "ρ 控制记忆长度，0.9 是常见默认。"),
-    ], size=12.5, gap=0.86, bullet_color=PURPLE)
+    ], size=13, gap=0.86, bullet_color=PURPLE)
     takeaway(s, "RMSProp 修好了 AdaGrad 的「步长归零」，但还没有修「冷启动」。", accent=PURPLE)
     notes(s, "RMSProp 从未正式发表，但在实践中几乎无处不在。它和动量结合，就是 Adam。")
 
@@ -575,7 +575,7 @@ def p_adam(s):
     figure(s, "fig_adam_flow.png", 0.95, 1.88, 11.45, 3.72)
     add_text(s, M, 5.86, 12.0, 0.34,
              "m̂ 和 v̂ 分别除以 (1−βᵗ)：训练初期 EMA 从 0 起步，不修就会系统性偏小。",
-             size=12.5, color=MUTED)
+             size=13, color=MUTED)
     takeaway(s, "Adam = 动量（方向）+ RMSProp（尺度）+ 偏差修正（冷启动）。", accent=TEAL)
     notes(s, "这张图是 Adam 的全部计算图。注意两条 EMA 是并行的，最后在更新式里汇合。"
              "默认超参在 Transformer 时代几乎成了通用起点。")
@@ -623,7 +623,7 @@ def p_solved(s):
                  align=PP_ALIGN.RIGHT)
     add_text(s, M, 6.02, 12.0, 0.3,
              "下一步的两条路：把正则从梯度里拿出来（AdamW），或直接对矩阵的谱做预条件（Muon）。",
-             size=12.5, color=MUTED)
+             size=13, color=MUTED)
     takeaway(s, "Adam 之后，问题从「每个坐标」转移到「正则」与「矩阵结构」。", accent=AMBER)
     notes(s, "这一页是全篇的转折。前两层 Adam 做得很好，所以 AdamW 不在更新式上改，而在正则上改；"
              "Muon 则换了一个空间——矩阵的谱。")
@@ -650,7 +650,7 @@ def p_crises(s):
         add_rect(s, x, 1.86, 0.07, 3.95, fill=col, line=None, shape_type=MSO_SHAPE.RECTANGLE)
         add_text(s, x + 0.28, 2.02, 5.4, 0.38, title, size=18, bold=True, color=col)
         add_text(s, x + 0.28, 2.46, 5.4, 0.3, who, size=11, color=MUTED)
-        add_text(s, x + 0.28, 2.90, 5.4, 2.7, body, size=12.5, color=TEXT, line_spacing=1.5)
+        add_text(s, x + 0.28, 2.90, 5.4, 2.7, body, size=13, color=TEXT, line_spacing=1.5)
     takeaway(s, "两次危机暴露的是同一件事：逐坐标自适应，看不到「全局」与「谱」。", accent=RED)
     notes(s, "Wilson 的结论在社区里争议很大，关键在调参预算是否公平。Reddi 的反例是构造性的，"
              "AMSGrad 修好了收敛性，但工程上很少直接用。")
@@ -700,7 +700,7 @@ def p_adamw(s):
         ("衰减只由 λ、η 决定。", "不再经过 1/√v̂，每个坐标被同等对待。"),
         ("默认 lr=1e-3 下，15% relative test error 改进。", "CIFAR-10 与 ImageNet32x32 都成立。"),
         ("让 Adam 能和 SGD+momentum 正面竞争。", "这是 ICLR 2019 论文的核心主张。"),
-    ], size=12.5, gap=0.86, bullet_color=AMBER)
+    ], size=13, gap=0.86, bullet_color=AMBER)
     add_rect(s, 7.95, 3.52, 4.76, 2.52, fill=rgb("FFF7ED"), line=rgb("FED7AA"), radius=0.06)
     add_text(s, 8.20, 3.68, 4.3, 0.3, "一句话记住", size=11, bold=True, color=AMBER)
     add_text(s, 8.20, 4.04, 4.25, 1.8,
@@ -758,7 +758,7 @@ def p_bounds(s):
         add_rect(s, M, y, CW, 1.26, fill=CARD, line=LINE, radius=0.06)
         add_rect(s, M, y, 0.07, 1.26, fill=col, line=None, shape_type=MSO_SHAPE.RECTANGLE)
         add_text(s, M + 0.28, y + 0.18, 3.4, 0.36, title, size=16, bold=True, color=col)
-        add_text(s, M + 3.9, y + 0.16, 8.0, 0.95, body, size=12.5, color=TEXT, line_spacing=1.35)
+        add_text(s, M + 3.9, y + 0.16, 8.0, 0.95, body, size=13, color=TEXT, line_spacing=1.35)
     takeaway(s, "AdamW 是默认起点，不是万能答案；先问任务，再问超参。", accent=AMBER)
     notes(s, "这一页是给「无脑 AdamW」泼冷水的。三个边界都是实践中真实存在的：分组 wd、泛化争议、"
              "以及解耦并不减少调参工作量。")
@@ -847,7 +847,7 @@ def p_scale(s):
         ("加 weight decay。", "原始 Muon 没有 wd；规模化必须补上。"),
         ("对齐 update scale。", "0.2·O·√max(A,B)，让 update RMS 落在 AdamW 的 0.2–0.4。"),
         ("结果：约 2× compute efficiency。", "Moonlight 3B/16B MoE，5.7T tokens，wd=0.1，lr=4.2e-4。"),
-    ], size=12.5, gap=0.82, bullet_color=RED)
+    ], size=13, gap=0.82, bullet_color=RED)
     add_rect(s, 8.05, 3.62, 4.66, 2.40, fill=rgb("FEF2F2"), line=rgb("FECACA"), radius=0.06)
     add_text(s, 8.28, 3.78, 4.2, 0.3, "为什么 scale 重要", size=11, bold=True, color=RED)
     add_text(s, 8.28, 4.14, 4.18, 1.7,
@@ -875,7 +875,7 @@ def p_kimi(s):
         ("QK-clip 触发条件。", "per-head max logit 超过 τ=100，就缩放 Wq / Wk。"),
         ("逐 head，不是逐层。", "Wq ← γ^α Wq，Wk ← γ^(1−α) Wk，只压住出问题的头。"),
         ("稳定后关闭。", "clip 是训练早期的保险丝，不是永久约束。"),
-    ], size=12.5, gap=0.86, bullet_color=RED)
+    ], size=13, gap=0.86, bullet_color=RED)
     add_rect(s, 7.95, 3.20, 4.76, 2.85, fill=WHITE, line=LINE, radius=0.06)
     add_text(s, 8.18, 3.36, 4.3, 0.3, "为什么 Muon 更需要它", size=11, bold=True, color=RED)
     add_text(s, 8.18, 3.74, 4.25, 2.1,
@@ -906,7 +906,7 @@ def p_compare(s):
     table(s, M, 1.86, CW, data, [1.55, 3.45, 3.35, 3.74], row_h=0.52, body=12, head=12.5)
     add_text(s, M, 5.82, 12.0, 0.3,
              "选型的第一问不是「哪个 SOTA」，而是「我的参数是不是矩阵、规模多大、能不能重调超参」。",
-             size=12.5, color=MUTED)
+             size=13, color=MUTED)
     takeaway(s, "三者的关系是叠加，不是替代：Muon 的 embedding 仍然用 AdamW。", accent=AMBER)
     notes(s, "表格里的「额外显存」是粗略量级：Adam 要存 m 和 v，Muon 要存动量，NS 还要临时矩阵。"
              "参数范围是 Muon 最重要的限制。")
@@ -934,7 +934,7 @@ def p_choose(s):
         add_text(s, x + 0.24, 3.72, 3.4, 0.42, choice, size=21, bold=True, color=col)
         add_text(s, x + 0.24, 4.26, 3.4, 1.3, note_, size=11.5, color=TEXT, line_spacing=1.35)
     add_text(s, M, 5.94, 12.0, 0.3, "没有「最好的优化器」，只有「和你的约束最匹配的优化器」。",
-             size=12.5, color=MUTED)
+             size=13, color=MUTED)
     takeaway(s, "先排除参数范围，再谈效率；Muon 不是所有参数的答案。", accent=AMBER)
     notes(s, "决策树故意做得很短：三个问题就能排除大部分错误选项。实际选型还要看框架支持、"
              "分布式通信成本和团队经验。")
