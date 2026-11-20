@@ -12,7 +12,7 @@
 | [VLA 与 π 系列模型演讲版](decks/vla-pi-deep-dive/) | 30 | PPTX + PDF | 2026-11-14 |
 | [世界模型：从想象中学习](decks/world-models/) | 81 | PPTX + PDF | 2026-11-14 |
 | [一块电池是怎样造出来的：新能源电池生产线科普（图文增强版）](decks/battery-production-line/) | 22 | PPTX + PDF + HTML + 26 图 | 2026-11-15 |
-| [从下山到矩阵几何：梯度下降优化器的七十年](decks/gd-optimizers-2026/) | 37 | PPTX + PDF | 2026-11-20 |
+| [从下山到矩阵几何：梯度下降优化器的七十年](decks/gd-optimizers-2026/) | 39 | PPTX + PDF | 2026-11-20 |
 
 ## 约定
 

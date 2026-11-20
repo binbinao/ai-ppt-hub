@@ -1,9 +1,10 @@
 # 研究笔记与来源核对
 
 **主题**：从下山到矩阵几何：梯度下降优化器的七十年（SGD → 动量 → Adam → AdamW → Muon）
-**交付**：37 页教学 PPT（PPTX + PDF + cover.png）
+**交付**：39 页教学 PPT（PPTX + PDF + cover.png，v2）
 **整理日期**：2026-11-20
 **核对原则**：论文与作者原文优先；博客、代码仓库作为工程证据；无法核验的常识性细节在正文标注，不替作者补数。
+**v2 页码说明**：v2 在四个部分前各插入一张分隔页，并把 Wilson 与 Reddi 两页合并；正文页码随之后移。本文页码已按 39 页版更新。
 
 ---
 
@@ -35,7 +36,7 @@
 
 ## 2. 逐页事实核对
 
-### 历史线（p3、p6、p34）
+### 历史线（p3、p6、p36）
 
 - 1847 Cauchy 梯度下降；1951 Robbins–Monro 随机近似；1964 Polyak 动量；1983 Nesterov 加速；1986 反向传播；2011 AdaGrad；2015 Adam；2017 arXiv / 2019 ICLR AdamW；2024 Muon；2025 Moonshot / Kimi K2。年份均取自原文或论文首页。
 - 时间线把 AdamW 标在 2017（arXiv 首版），正文与来源页标 ICLR 2019；两种写法都成立，正文没有把 2017 说成“正式发表”。
@@ -51,43 +52,43 @@
 - p8/p9 的步数、学习率区间来自本讲 Toy 实验（见第 3 节），不是文献数字。
 - p9 的“稳定区间”是在 `0.001–3.0`、55 个对数网格点上、固定跑 200 步读出的；SGD 写 `0.001–0.019`、动量写“到 0.037”、Adam 写 `0.001–3.0`，都限定在这张网格内，没有外推。
 
-### Adam（p13–p15）
+### Adam（p15–p17）
 
 - 默认 `β₁=0.9, β₂=0.999, ε=1e-8, lr=0.001`：S8。
 - 偏差修正 `m̂=m/(1−β₁ᵗ)`、`v̂=v/(1−β₂ᵗ)`：S8 §3。
-- “坐标尺度不变 / 步长有界 / 稀疏友好”是对 Adam 更新式的性质整理，不是论文原话；p15 的页脚标“本讲整理”。
+- “坐标尺度不变 / 步长有界 / 稀疏友好”是对 Adam 更新式的性质整理，不是论文原话；p17 的页脚标“本讲整理”。
 - 首步 `m₁/(√v₁)=3.16·sign(g)` 是把 `β₁=0.9, β₂=0.999` 代入后的算术结果（`0.1/√0.001≈3.16`），属于本讲推导。
 
-### 两次危机（p16–p17）
+### 两次危机（p18）
 
-- Wilson et al. 2017：在若干视觉任务上，充分调参后 SGD+momentum 不输自适应方法；论文的核心论点之一是自适应方法找到的解泛化更差。p16 明确写“论文结论的转述，非原文引用”，没有伪造引号内容。
-- Reddi et al. 2018：给出 Adam 在凸问题上的不收敛反例；AMSGrad 用 `v̂_t=max(v̂_{t−1},v_t)` 修复。p17 的“代价：更保守”是工程解读，不是论文原句。
-- p16 “2019 年 AdamW … 追平 SGD+momentum”对应 S10 的 “compete with SGD with momentum”；原文更谨慎（CIFAR-10 缩小大部分差距、ImageNet32x32 可比），本讲用“追平”是教学化压缩，来源页保留原文措辞。
+- Wilson et al. 2017：在若干视觉任务上，充分调参后 SGD+momentum 不输自适应方法；论文的核心论点之一是自适应方法找到的解泛化更差。p18 明确写“论文结论的转述，非原文引用”，没有伪造引号内容。
+- Reddi et al. 2018：给出 Adam 在凸问题上的不收敛反例；AMSGrad 用 `v̂_t=max(v̂_{t−1},v_t)` 修复。p19 的“代价：更保守”是工程解读，不是论文原句。
+- p18 “2019 年 AdamW … 追平 SGD+momentum”对应 S10 的 “compete with SGD with momentum”；原文更谨慎（CIFAR-10 缩小大部分差距、ImageNet32x32 可比），本讲用“追平”是教学化压缩，来源页保留原文措辞。
 
-### AdamW（p18–p21）
+### AdamW（p21–p23）
 
 - “L2 与 weight decay 对 SGD 等价、对 Adam 不等价”：S10 摘要第一句。
 - “15% relative improvement in test error”：S10 §1（引言）与 §5（实验）；原文明确是**默认 lr=0.001** 下、CIFAR-10 与 ImageNet32x32 **两者都**达到 15% 相对改进，对比对象是 Adam+L2。
 - 注意：15% **不在摘要里**。早期版本的本讲页脚曾写 “Table 1 / Abstract”，已改为 “§1 与 §5（15% 在引言与实验部分）”。
 - “15% 是相对改进，不是绝对准确率 +15 点”：这是对 “relative improvement in test error” 的中文澄清，正确。
-- Llama 3 405B：峰值 lr `8e-5`、8000 步 linear warmup、cosine 衰减到 `8e-7`、总 `1.2M` steps、weight decay `0.1`：S15 §3.3.1 / Table 3。**论文正文没有给出 β₁/β₂**，所以 p21 表格写“β 值正文未给出”，没有编造。
+- Llama 3 405B：峰值 lr `8e-5`、8000 步 linear warmup、cosine 衰减到 `8e-7`、总 `1.2M` steps、weight decay `0.1`：S15 §3.3.1 / Table 3。**论文正文没有给出 β₁/β₂**，所以 p23 表格写“β 值正文未给出”，没有编造。
 
-### Muon（p22–p29）
+### Muon（p26–p31）
 
 - 定义：只用于 2D hidden 参数；先 Nesterov 动量，再做 Newton–Schulz 正交化：S12。
 - NS 系数 `(3.4445, −4.7750, 2.0315)`、5 步、bf16：S12。
-- 目标是把奇异值压到 1 附近；作者说 `ε≈0.3` 的偏差不伤 loss，调参目标是让极限落在 `[0.7, 1.3]`：S12。本讲 p26 写 `[0.68, 1.13]` 是**本讲 Toy 实验**的实测区间，页脚同时标了“Jordan 2024；本讲 Toy 实验”，没有把实测值冒充论文值。
+- 目标是把奇异值压到 1 附近；作者说 `ε≈0.3` 的偏差不伤 loss，调参目标是让极限落在 `[0.7, 1.3]`：S12。本讲 p28 写 `[0.68, 1.13]` 是**本讲 Toy 实验**的实测区间，页脚同时标了“Jordan 2024；本讲 Toy 实验”，没有把实测值冒充论文值。
 - 3.3→2.6 A100-seconds（CIFAR-10 94%）、NanoGPT 1.35×、1.5B 用 10 个 8×H100-hours（AdamW 13.3）、FLOP 开销 0.7%（NanoGPT）/0.5%（Llama 405B）、12 次记录由 7 位研究者保持：S12。
 - “Muon 2024-10 发布”：博客记录了 2024-10-15 的 speedrun 改进；仓库/博客是 2024 年 10–12 月间公开。正文用“2024”年份，不写具体日。
 - Moonshot：两个关键技术是加 weight decay、按参数调整 update scale；更新式 `W←W−η(0.2·O·√max(A,B)+λW)`；把 update RMS 对齐 AdamW 的 0.2–0.4；compute-optimal 下约 2×；Moonlight 3B/16B MoE、5.7T tokens、wd=0.1、峰值 lr=4.2e-4：S13。
 - Kimi K2：1T 总参 / 32B 激活、15.5T tokens、零 loss spike；MuonClip = Muon + QK-clip；QK-clip 在 per-head max logit 超过阈值 `τ=100` 时把 `Wq←γ^α Wq`、`Wk←γ^(1−α) Wk`（逐 head），稳定后关闭：S14。
 - 工程边界：embedding / 最终 classifier / 标量向量仍用 AdamW；Q/K/V 分开优化更好；只支持 2D（4D 卷积可 flatten）；尚未证明 fine-tune / RL 同样有效；分布式 NS 通信是难点：S12（作者“open questions”与实现说明）。
 
-### 对比与选型（p30–p32）
+### 对比与选型（p32–p34）
 
 - 三者对比表是**本讲综合**，不是某篇论文的表格；每一行的依据分散在 S8–S14。
 - 选型决策树、六个坑是工程经验总结，依据是 S12–S15 的边界条件与常见失败模式，属于“本讲整理”，不是引用结论。
-- p31 的“先问三个问题”（参数是不是 2D 矩阵、是否预训练、能否承担重调成本）是教学框架。
+- p33 的“先问三个问题”（参数是不是 2D 矩阵、是否预训练、能否承担重调成本）是教学框架。
 
 ---
 
@@ -95,6 +96,7 @@
 
 脚本：`experiment.py`（numpy + matplotlib，无 GPU）。
 输出：`figs/fig_traj.png`、`figs/fig_lr.png`、`figs/fig_bias.png`、`figs/fig_muon.png`、`figs/fig_descent.png`、`experiment-results.json`。
+新增插图：`figures_v2.py`（matplotlib）生成 `figs/fig_surface3d.png`、`fig_momentum.png`、`fig_adam_flow.png`、`fig_adamw.png`、`fig_spectrum.png`、`fig_compute.png`、`fig_lowrank.png`、`fig_adaptive.png`；其中谱图与低秩图使用合成矩阵，参数写在脚本注释里。
 
 ### 3.1 病态二次函数
 
@@ -160,11 +162,11 @@ m₁/√v₁ = 0.1g / (0.0316|g|) ≈ 3.16·sign(g)
 
 1. **Transformer 原论文的 Adam 超参**（`β₂=0.98, ε=1e-9, warmup 4000`）是领域常识，本讲正文未逐字引用 S17；引用时请以原文 §5.3 为准。
 2. **“AdamW 追平 SGD+momentum”** 是教学化压缩；原文是 “compete with”，且在 CIFAR-10 上是“缩小大部分差距”，ImageNet32x32 上是“可比”。严格表述见 S10。
-3. **Wilson et al. 2017 的结论有适用范围**：它不是说“所有自适应方法在所有任务上都更差”，而是说在若干视觉任务、充分调参后，自适应方法的泛化优势不成立。本讲 p16 已写明是转述。
+3. **Wilson et al. 2017 的结论有适用范围**：它不是说“所有自适应方法在所有任务上都更差”，而是说在若干视觉任务、充分调参后，自适应方法的泛化优势不成立。本讲 p18 已写明是转述。
 4. **Reddi 反例是凸问题上的构造**，不等于“Adam 在深度网络里一定不收敛”；工程上的 warmup / clip 也不是 AMSGrad 的等价替代，只是经验兜底。
 5. **Muon 的“12 次记录 / 7 位研究者”** 是博客在写作时的统计，会随时间变化；本讲用它说明社区复现，不把它当作永久事实。
 6. **Muon 的适用边界**：作者明确只覆盖预训练、2D hidden 参数；fine-tune、RL、embedding、输出层仍用 AdamW。Kimi K2 的 MuonClip 是工程改造（QK-clip），不是原版 Muon 的数学结论。
-7. **Llama 3 的 β 值缺失**：论文没有给，p21 如实标注，没有用“常见默认值”冒充实测配置。
+7. **Llama 3 的 β 值缺失**：论文没有给，p23 如实标注，没有用“常见默认值”冒充实测配置。
 8. **成本页的“数百万美元”** 是量级估算，不是报价单；不同芯片、云价、利用率会改变结果。
 
 ---
