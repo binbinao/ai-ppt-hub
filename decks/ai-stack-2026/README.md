@@ -12,5 +12,4 @@
 
 ## 相关
 
-- 全文：`workdir/ai-stack-thinking-2026/wechat/article.md`
 - 生成日期：2026-11-20
